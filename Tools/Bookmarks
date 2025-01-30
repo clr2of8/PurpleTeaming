@@ -302,7 +302,7 @@
                "id": "35",
                "name": "VECTR Server",
                "type": "url",
-               "url": "https://art-vm-0:8081/"
+               "url": "https://linux.cloudlab.lan:8081/"
             }, {
                "date_added": "13253332372935674",
                "date_last_used": "0",
@@ -354,7 +354,7 @@
                "id": "41",
                "name": "CALDERA Server",
                "type": "url",
-               "url": "http://art-vm-0:8888/"
+               "url": "http://linux.cloudlab.lan:8888/"
             }, {
                "date_added": "13246048193903489",
                "date_last_used": "13323562711407800",
