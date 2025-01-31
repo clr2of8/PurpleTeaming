@@ -53,6 +53,7 @@ if ( -not ($property -and $property.'(Default)')) {
 start-process chrome; sleep 3 # must start chrome before bookmarks file exists
 Write-Host "Installing Chrome Bookmarks" -ForegroundColor Cyan
 Set-Bookmarks
+Stop-Process -Name "chrome" -Force
 
 # install Notepad++
 if (-not (Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*  | where-Object DisplayName -like 'NotePad++*')) {
