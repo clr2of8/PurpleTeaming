@@ -16,9 +16,14 @@ cd caldera
 python3 -m venv .venv
 source .venv/bin/activate
 sudo .venv/bin/python3 -m pip install -r requirements.txt
-.venv/bin/python3 server.py --insecure --build &
+cp conf/default.yml conf/local.yml
+sed -i -r "s/: admin.*$/: AtomicRedTeam1\!/g" conf/local.yml
+sed -i -r "s/admin: /art: /g" conf/local.yml
+sudo kill -9 $(sudo lsof -t -i :8888)
+.venv/bin/python3 server.py --build &
 
 echo "****Installing VECTR****"
+echo '127.0.0.1 linux.cloudlab.lan' | sudo tee -a /etc/hosts
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 sudo chmod a+r /etc/apt/keyrings/docker.asc
@@ -30,11 +35,15 @@ sudo apt update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 sudo mkdir -p /opt/vectr
 cd /opt/vectr
-sudo wget https://github.com/SecurityRiskAdvisors/VECTR/releases/download/ce-9.5.3/sra-vectr-runtime-9.5.3-ce.zip
+sudo wget https://github.com/SecurityRiskAdvisors/VECTR/releases/download/ce-9.5.3/sra-vectr-runtime-9.5.3-ce.zip -nc
 sudo unzip sra-vectr-runtime-9.5.3-ce.zip
-sed -i -r "s/VECTR_HOSTNAME\=.*$/VECTR_HOSTNAME=linux.cloudlab.lan/g" /opt/vectr/.env
+sudo sed -i -r "s/VECTR_HOSTNAME\=.*$/VECTR_HOSTNAME=linux.cloudlab.lan/g" /opt/vectr/.env
 cd /opt/vectr
 sudo docker-compose down
 sudo docker compose up -d
+croncmd="sleep 30 && docker compose up -d"
+cronjob="@reboot $croncmd"
+( crontab -l -u ubuntu | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -u ubuntu -
+
 
 echo "****Done with Linux VM Setup****"
