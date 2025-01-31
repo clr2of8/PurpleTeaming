@@ -49,6 +49,8 @@ if ( -not ($property -and $property.'(Default)')) {
     Install-Application 'http://dl.google.com/chrome/install/375.126/chrome_installer.exe' $flags
 }
 
+Remove-Item '$env:USERPROFILE\Desktop\Microsoft Edge.lnk' -ErrorAction Ignore
+
 # Installing Chrome Bookmarks
 start-process chrome; sleep 3 # must start chrome before bookmarks file exists
 Write-Host "Installing Chrome Bookmarks" -ForegroundColor Cyan
