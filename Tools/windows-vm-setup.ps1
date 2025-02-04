@@ -72,7 +72,7 @@ Copy-Item "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Program
 Copy-Item "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt.lnk" "$env:USERPROFILE\Desktop\Command Prompt.lnk"
 Copy-Item 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Notepad++.lnk' "$env:USERPROFILE\Desktop\Notepad++.lnk"
 
-# Write-Host "Writing class files to $env:USERPROFILE\PurpleTeaming" -ForegroundColor Cyan
+Write-Host "Writing class files to $env:USERPROFILE\PurpleTeaming" -ForegroundColor Cyan
 Get-ClassFiles 
 
 # Turn off Automatic Sample Submission in Windows Defender
