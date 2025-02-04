@@ -37,7 +37,6 @@ function Set-Bookmarks {
     # only update the bookmark file and restart Chrome if there was a change
     if ((Get-Content $bookmarksFile -raw) -ne (Get-Content "$env:Temp\Bookmarks" -raw)) {
         $newJsonData | Set-Content $bookmarksFile
-        Stop-Process -Name "chrome" -Force
     } 
 }
     
