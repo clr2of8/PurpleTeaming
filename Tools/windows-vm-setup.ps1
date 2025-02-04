@@ -56,10 +56,9 @@ Invoke-WebRequest https://raw.githubusercontent.com/clr2of8/PowerShellForInfoSec
 
 # Installing Chrome Bookmarks
 start-process chrome; sleep 3 # must start chrome before bookmarks file exists
-Stop-Process -Name "chrome" -Force
+Stop-Process -Name "chrome" -Force -ErrorAction Ignore
 Write-Host "Installing Chrome Bookmarks" -ForegroundColor Cyan
 Set-Bookmarks
-Stop-Process -Name "chrome" -Force
 
 # install Notepad++
 if (-not (Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*  | where-Object DisplayName -like 'NotePad++*')) {
