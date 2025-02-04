@@ -26,19 +26,6 @@ function Get-ClassFiles {
     Remove-Item $mainFolderUnzipped -Recurse -Force
     Remove-Item $path -Recurse
 }
-
-function Set-Bookmarks {
-    $bookmarksFile = "$env:USERPROFILE\AppData\Local\Google\Chrome\User Data\Default\Bookmarks"
-    if (-Not (Test-Path $bookmarksFile)) {
-        Invoke-WebRequest "https://raw.githubusercontent.com/clr2of8/PurpleTeaming/refs/heads/main/Tools/Bookmarks" -OutFile "$env:USERPROFILE\AppData\Local\Google\Chrome\User Data\Default\Bookmarks"
-    }
-    Invoke-WebRequest "https://raw.githubusercontent.com/clr2of8/PurpleTeaming/refs/heads/main/Tools/Bookmarks" -OutFile "$env:Temp\Bookmarks"
-
-    # only update the bookmark file and restart Chrome if there was a change
-    if ((Get-Content $bookmarksFile -raw) -ne (Get-Content "$env:Temp\Bookmarks" -raw)) {
-        $newJsonData | Set-Content $bookmarksFile
-    } 
-}
     
 # install Chrome (must be admin)
 $property = Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\chrome.exe' -ErrorAction Ignore
@@ -54,11 +41,12 @@ new-item -Type Directory "$env:USERPROFILE\Documents\WindowsPowerShell\Modules\T
 Invoke-WebRequest https://raw.githubusercontent.com/clr2of8/PowerShellForInfoSec/refs/heads/main/Tools/Timer.psm1 -OutFile "$env:USERPROFILE\Documents\WindowsPowerShell\Modules\Timer\Timer.psm1" -ErrorAction ignore | out-null
 
 # Installing Chrome Bookmarks
-if(-not (get-process chrome -ErrorAction ignore)){
+Write-Host "Installing Chrome Bookmarks" -ForegroundColor Cyan
+$bookmarksFile = "$env:USERPROFILE\AppData\Local\Google\Chrome\User Data\Default\Bookmarks"
+if(-not (test-path $bookmarksFile)){
   start-process chrome; sleep 3 # must start chrome before bookmarks file exists
 }
-Write-Host "Installing Chrome Bookmarks" -ForegroundColor Cyan
-Set-Bookmarks
+Invoke-WebRequest "https://raw.githubusercontent.com/clr2of8/PurpleTeaming/refs/heads/main/Tools/Bookmarks" -OutFile "$env:USERPROFILE\AppData\Local\Google\Chrome\User Data\Default\Bookmarks"
 Stop-Process -Name "chrome" -Force -ErrorAction Ignore
 
 # install Notepad++
