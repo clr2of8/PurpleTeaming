@@ -55,7 +55,9 @@ new-item -Type Directory "$env:USERPROFILE\Documents\WindowsPowerShell\Modules\T
 Invoke-WebRequest https://raw.githubusercontent.com/clr2of8/PowerShellForInfoSec/refs/heads/main/Tools/Timer.psm1 -OutFile "$env:USERPROFILE\Documents\WindowsPowerShell\Modules\Timer\Timer.psm1" -ErrorAction ignore | out-null
 
 # Installing Chrome Bookmarks
-start-process chrome; sleep 3 # must start chrome before bookmarks file exists
+if(-not (get-process chrome)){
+  start-process chrome; sleep 3 # must start chrome before bookmarks file exists
+}
 Stop-Process -Name "chrome" -Force -ErrorAction Ignore
 Write-Host "Installing Chrome Bookmarks" -ForegroundColor Cyan
 Set-Bookmarks
