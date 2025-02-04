@@ -29,11 +29,18 @@ function Purple-PatchCaldera {
 }
 
 function Purple-InstallAtomicRedTeam {
-
+    Add-MpPreference -ExclusionPath C:\AtomicRedTeam\
+    IEX (IWR 'https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/install-atomicredteam.ps1' -UseBasicParsing);
+    Install-AtomicRedTeam -getAtomics
+    add-content $profile "Import-Module C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1 -Force"
 }
 
 function Purple-InstallMACAT {
-
+    Add-MpPreference -ExclusionPath "C:\MACAT\"
+    $msi = "$env:USERPROFILE\Downloads\MACAT_0.1.1_x64_en-US.msi"
+    if (-not (test-path $msi)) {
+        Invoke-WebRequest 'https://github.com/thebleucheese/macat-ext/releases/download/v0.1.1/MACAT_0.1.1_x64_en-US.msi' -OutFile $msi
+    }
 }
 
 
