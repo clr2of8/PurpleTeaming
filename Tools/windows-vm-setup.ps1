@@ -50,6 +50,9 @@ if ( -not ($property -and $property.'(Default)')) {
 }
 
 Remove-Item "$env:USERPROFILE\Desktop\Microsoft Edge.lnk" -ErrorAction Ignore
+# Add Class Timer module
+new-item -Type Directory "$env:USERPROFILE\Documents\WindowsPowerShell\Modules\Timer" -ErrorAction ignore | out-null
+Invoke-WebRequest https://raw.githubusercontent.com/clr2of8/PowerShellForInfoSec/refs/heads/main/Tools/Timer.psm1 -OutFile "$env:USERPROFILE\Documents\WindowsPowerShell\Modules\Timer\Timer.psm1" -ErrorAction ignore | out-null
 
 # Installing Chrome Bookmarks
 start-process chrome; sleep 3 # must start chrome before bookmarks file exists
