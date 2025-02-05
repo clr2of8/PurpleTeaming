@@ -65,7 +65,7 @@ Write-Host "Writing class files to $env:USERPROFILE\PurpleTeaming" -ForegroundCo
 Get-ClassFiles
 # Add Purple module
 "$env:USERPROFILE\Documents\WindowsPowerShell\Modules\"
-Remove-Item "$env:USERPROFILE\Documents\WindowsPowerShell\Modules\Purple" -erroraction ignore
+Remove-Item "$env:USERPROFILE\Documents\WindowsPowerShell\Modules\Purple" -Recurse -erroraction ignore
 Move-Item  -Path "$env:USERPROFILE\PurpleTeaming\Purple" -Destination "$env:USERPROFILE\Documents\WindowsPowerShell\Modules\"
 
 
