@@ -64,9 +64,8 @@ Copy-Item 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Notepad++.lnk' "
 Write-Host "Writing class files to $env:USERPROFILE\PurpleTeaming" -ForegroundColor Cyan
 Get-ClassFiles
 # Add Purple module
-"$env:USERPROFILE\Documents\WindowsPowerShell\Modules\"
 Remove-Item "$env:USERPROFILE\Documents\WindowsPowerShell\Modules\Purple" -Recurse -erroraction ignore
-Move-Item  -Path "$env:USERPROFILE\PurpleTeaming\Purple" -Destination "$env:USERPROFILE\Documents\WindowsPowerShell\Modules\"
+Move-Item  -Path "$env:USERPROFILE\PurpleTeaming\Tools\Purple" -Destination "$env:USERPROFILE\Documents\WindowsPowerShell\Modules\"
 
 
 # Turn off Automatic Sample Submission in Windows Defender
