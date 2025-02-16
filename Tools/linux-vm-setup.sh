@@ -1,4 +1,5 @@
 #!/bin/bash
+# wget https://raw.githubusercontent.com/clr2of8/PurpleTeaming/refs/heads/main/Tools/linux-vm-setup.sh -O linux-vm-setup.sh; chmod +x linux-vm-setup.sh; ./linux-vm-setup.sh
 
 echo "****Installing Git,pip3,curl****"
 sudo apt update
