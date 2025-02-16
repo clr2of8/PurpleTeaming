@@ -1,3 +1,5 @@
+# iex (iwr https://raw.githubusercontent.com/clr2of8/PurpleTeaming/refs/heads/main/Tools/windows-vm-setup.ps1 -UseBasicParsing)
+
 Function Install-Application($Url, $flags) {
     $LocalTempDir = $env:TEMP
     $Installer = "Installer.exe"
