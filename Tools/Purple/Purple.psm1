@@ -36,6 +36,7 @@ function Purple-InstallAtomicRedTeam {
 }
 
 function Purple-InstallMACAT {
+    Set-MpPreference -DisableRealtimeMonitoring $true
     Add-MpPreference -ExclusionPath "C:\MACAT\"
     $msi = "$env:USERPROFILE\Downloads\MACAT_0.1.1_x64_en-US.msi"
     if (-not (test-path $msi)) {
