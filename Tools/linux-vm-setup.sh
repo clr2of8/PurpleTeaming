@@ -43,7 +43,7 @@ sudo wget https://github.com/SecurityRiskAdvisors/VECTR/releases/download/ce-9.5
 sudo unzip sra-vectr-runtime-9.5.3-ce.zip
 sudo sed -i -r "s/VECTR_HOSTNAME\=.*$/VECTR_HOSTNAME=linux.cloudlab.lan/g" /opt/vectr/.env
 cd /opt/vectr
-sudo docker-compose down
+sudo docker compose down
 sudo docker compose up -d
 croncmd="sleep 30 && docker compose up -d"
 cronjob="@reboot $croncmd"
