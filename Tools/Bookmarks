@@ -1,5 +1,5 @@
 {
-   "checksum": "9468ba59d5f47130b7400c8ec503dfc6",
+   "checksum": "696d05a12ebbff866dff4678174780c5",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -13,7 +13,7 @@
                "url": "https://attack.mitre.org/"
             }, {
                "date_added": "13248221721023364",
-               "date_last_used": "13322464576563072",
+               "date_last_used": "13384883794656311",
                "guid": "cd0a222d-ebe0-47d0-9acd-db7e55ec73a4",
                "id": "4",
                "name": "ATT&CK® Navigator",
@@ -119,7 +119,7 @@
                "url": "https://atomicredteam.io/"
             }, {
                "date_added": "0",
-               "date_last_used": "13384717267824199",
+               "date_last_used": "13384798273127298",
                "guid": "43c024fc-bf2f-453e-b0dd-dddeeb2b14e8",
                "id": "22",
                "name": "Atomic Red Team GitHub",
@@ -127,7 +127,7 @@
                "url": "https://github.com/redcanaryco/atomic-red-team"
             }, {
                "date_added": "0",
-               "date_last_used": "13384717273086920",
+               "date_last_used": "13384818407927385",
                "guid": "9062a64b-55cb-414e-a734-a520aace2c68",
                "id": "23",
                "name": "Atomics Folder",
@@ -151,7 +151,7 @@
                "url": "https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/Indexes/Indexes-CSV/windows-index.csv"
             }, {
                "date_added": "13236976563000000",
-               "date_last_used": "13384719727675597",
+               "date_last_used": "13384801506747859",
                "guid": "29761808-6006-41a6-ad02-ea4fefb3c96c",
                "id": "27",
                "name": "ATT&CK Navigator Layers",
@@ -203,7 +203,7 @@
          }, {
             "children": [ {
                "date_added": "13253332350982437",
-               "date_last_used": "13321230311236841",
+               "date_last_used": "13384747483642196",
                "guid": "0d112d57-0c96-445b-a439-0add40d1dc5d",
                "id": "35",
                "name": "VECTR Server",
@@ -211,7 +211,7 @@
                "url": "https://linux.cloudlab.lan:8081/"
             }, {
                "date_added": "13253332372935674",
-               "date_last_used": "13384717229057584",
+               "date_last_used": "13384747491395694",
                "guid": "9cc76534-0742-4a76-9c69-febfeb3ebffe",
                "id": "36",
                "name": "VECTR | Overview",
@@ -298,6 +298,152 @@
             "type": "folder"
          }, {
             "children": [ {
+               "date_added": "13384738897472134",
+               "date_last_used": "0",
+               "guid": "35d711de-4a47-4c0e-ae7e-fd897b2f39d4",
+               "id": "76",
+               "name": "MACAT Download",
+               "type": "url",
+               "url": "https://github.com/thebleucheese/macat-ext/releases"
+            } ],
+            "date_added": "13384738322625829",
+            "date_last_used": "0",
+            "date_modified": "13384738897472134",
+            "guid": "2a5ccfca-4c52-4c8e-99e0-7fb7f5f4cbe2",
+            "id": "73",
+            "name": "MACAT",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13384714841339445",
+               "date_last_used": "13384813710147410",
+               "guid": "bf209c3f-0103-4197-8ffc-28d39df04eff",
+               "id": "65",
+               "name": "SnapAttack | About",
+               "type": "url",
+               "url": "https://www.snapattack.com/"
+            }, {
+               "date_added": "13384803264236087",
+               "date_last_used": "13384803408841230",
+               "guid": "1694f25b-88aa-4d37-8099-73ed931d7a2a",
+               "id": "78",
+               "name": "SnapAttack | Login",
+               "type": "url",
+               "url": "https://app.snapattack.com/login"
+            }, {
+               "date_added": "13384814268016647",
+               "date_last_used": "0",
+               "guid": "71bcc83f-dc1c-45fd-9b20-c6d9504ab624",
+               "id": "80",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Slack Invite",
+               "type": "url",
+               "url": "https://snapattackcommunity.slack.com/join/shared_invite/zt-16mv51s8g-Dkzd8v8hprsce_tplLG~Hg#/shared-invite/email"
+            } ],
+            "date_added": "13384814235890689",
+            "date_last_used": "0",
+            "date_modified": "13384814268016647",
+            "guid": "d7fe209c-b5a7-4c05-8084-a2b7e19f7f87",
+            "id": "79",
+            "name": "Snap Attack",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13323563107295884",
+               "date_last_used": "13384716004179796",
+               "guid": "246cc2fd-e2b6-4049-85b2-aad646c9fc1d",
+               "id": "53",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Cyber Analytics Repository (CAR)",
+               "type": "url",
+               "url": "https://car.mitre.org/"
+            }, {
+               "date_added": "13384716247608307",
+               "date_last_used": "0",
+               "guid": "6fd6c61f-bb54-4fdd-93b3-0b737bfd57d5",
+               "id": "67",
+               "name": "ATT&CK Nav: CAR",
+               "type": "url",
+               "url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2Fmitre-attack%2Fcar%2Fmaster%2Fdocs%2Fcar_attack%2Fcar_attack.json"
+            }, {
+               "date_added": "13323563124949095",
+               "date_last_used": "13384800193751063",
+               "guid": "143d1754-d053-4c10-9025-6ae40af3f1cd",
+               "id": "54",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Sigma",
+               "type": "url",
+               "url": "https://github.com/SigmaHQ/sigma"
+            }, {
+               "date_added": "13384715906532256",
+               "date_last_used": "13384884682570605",
+               "guid": "4b1878ca-3756-478b-b91c-5fc40912fc7c",
+               "id": "66",
+               "name": "ATT&CK Nav: Sigma",
+               "type": "url",
+               "url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/SigmaHQ/sigma/refs/heads/master/other/sigma_attack_nav_coverage.json"
+            }, {
+               "date_added": "13323563147301125",
+               "date_last_used": "13384801384932469",
+               "guid": "0fa7e6a3-6d25-4358-87b7-3feab929440d",
+               "id": "55",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Elastic Search",
+               "type": "url",
+               "url": "https://github.com/elastic/detection-rules"
+            }, {
+               "date_added": "13384714529603538",
+               "date_last_used": "13384884593532291",
+               "guid": "f8ed3ca8-7750-4aac-84a8-0a4cc807fb53",
+               "id": "62",
+               "name": "ATT&CK Nav: Elastic Search",
+               "type": "url",
+               "url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https://gist.githubusercontent.com/tradebot-elastic/0443cfb5016bed103f1940b2f336e45a/raw/Elastic-detection-rules-all.json"
+            }, {
+               "date_added": "13323563177440407",
+               "date_last_used": "13384716333505616",
+               "guid": "b0137666-b10c-48d8-bf8d-377474bd3066",
+               "id": "56",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Splunk Security Content",
+               "type": "url",
+               "url": "https://github.com/splunk/security_content"
+            }, {
+               "date_added": "13384714729612578",
+               "date_last_used": "13384884588727743",
+               "guid": "92570e55-fd65-4506-8d01-ffa931627390",
+               "id": "63",
+               "name": "ATT&CK Nav: Splunk",
+               "type": "url",
+               "url": "https://mitremap.splunkresearch.com/"
+            }, {
+               "date_added": "13384799246148401",
+               "date_last_used": "0",
+               "guid": "88935155-0d58-4100-9ddd-5bc7fc9fbefc",
+               "id": "77",
+               "name": "Sigma CLI",
+               "type": "url",
+               "url": "https://github.com/SigmaHQ/sigma-cli"
+            } ],
+            "date_added": "13323563082673091",
+            "date_last_used": "0",
+            "date_modified": "13384799267035129",
+            "guid": "17faa058-a5f1-4812-98dc-fcf3a1b6a5c6",
+            "id": "52",
+            "name": "Detection Rule Repositories",
+            "type": "folder"
+         }, {
+            "children": [ {
                "date_added": "13323563395246450",
                "date_last_used": "13384712041402145",
                "guid": "d8c6133a-e28c-46b4-a951-e48cb09a250e",
@@ -373,111 +519,31 @@
             "name": "Misc",
             "type": "folder"
          }, {
-            "children": [ {
-               "date_added": "13384714841339445",
-               "date_last_used": "0",
-               "guid": "bf209c3f-0103-4197-8ffc-28d39df04eff",
-               "id": "65",
-               "name": "SnapAttack | Detect the threats that matter, faster.",
-               "type": "url",
-               "url": "https://www.snapattack.com/"
-            }, {
-               "children": [ {
-                  "date_added": "13323563107295884",
-                  "date_last_used": "13384716004179796",
-                  "guid": "246cc2fd-e2b6-4049-85b2-aad646c9fc1d",
-                  "id": "53",
-                  "meta_info": {
-                     "power_bookmark_meta": ""
-                  },
-                  "name": "Cyber Analytics Repository (CAR)",
-                  "type": "url",
-                  "url": "https://car.mitre.org/"
-               }, {
-                  "date_added": "13384716247608307",
-                  "date_last_used": "0",
-                  "guid": "6fd6c61f-bb54-4fdd-93b3-0b737bfd57d5",
-                  "id": "67",
-                  "name": "ATT&CK Nav: CAR",
-                  "type": "url",
-                  "url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2Fmitre-attack%2Fcar%2Fmaster%2Fdocs%2Fcar_attack%2Fcar_attack.json"
-               }, {
-                  "date_added": "13323563124949095",
-                  "date_last_used": "13384716394194036",
-                  "guid": "143d1754-d053-4c10-9025-6ae40af3f1cd",
-                  "id": "54",
-                  "meta_info": {
-                     "power_bookmark_meta": ""
-                  },
-                  "name": "Sigma",
-                  "type": "url",
-                  "url": "https://github.com/SigmaHQ/sigma"
-               }, {
-                  "date_added": "13384715906532256",
-                  "date_last_used": "0",
-                  "guid": "4b1878ca-3756-478b-b91c-5fc40912fc7c",
-                  "id": "66",
-                  "name": "ATT&CK Nav: Sigma (** Needs Updated)",
-                  "type": "url",
-                  "url": "https://mitre-attack.github.io/attack-navigator/"
-               }, {
-                  "date_added": "13323563147301125",
-                  "date_last_used": "13384714191670630",
-                  "guid": "0fa7e6a3-6d25-4358-87b7-3feab929440d",
-                  "id": "55",
-                  "meta_info": {
-                     "power_bookmark_meta": ""
-                  },
-                  "name": "Elastic Search",
-                  "type": "url",
-                  "url": "https://github.com/elastic/detection-rules"
-               }, {
-                  "date_added": "13384714529603538",
-                  "date_last_used": "0",
-                  "guid": "f8ed3ca8-7750-4aac-84a8-0a4cc807fb53",
-                  "id": "62",
-                  "name": "ATT&CK Nav: Elastic Search",
-                  "type": "url",
-                  "url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https://gist.githubusercontent.com/tradebot-elastic/0443cfb5016bed103f1940b2f336e45a/raw/Elastic-detection-rules-all.json"
-               }, {
-                  "date_added": "13323563177440407",
-                  "date_last_used": "13384716333505616",
-                  "guid": "b0137666-b10c-48d8-bf8d-377474bd3066",
-                  "id": "56",
-                  "meta_info": {
-                     "power_bookmark_meta": ""
-                  },
-                  "name": "Splunk Security Content",
-                  "type": "url",
-                  "url": "https://github.com/splunk/security_content"
-               }, {
-                  "date_added": "13384714729612578",
-                  "date_last_used": "0",
-                  "guid": "92570e55-fd65-4506-8d01-ffa931627390",
-                  "id": "63",
-                  "name": "ATT&CK Nav: Splunk",
-                  "type": "url",
-                  "url": "https://mitremap.splunkresearch.com/"
-               } ],
-               "date_added": "13323563082673091",
-               "date_last_used": "0",
-               "date_modified": "13384716257974462",
-               "guid": "17faa058-a5f1-4812-98dc-fcf3a1b6a5c6",
-               "id": "52",
-               "name": "Detection Rule Repositories",
-               "type": "folder"
-            } ],
-            "date_added": "13384714793916211",
-            "date_last_used": "0",
-            "date_modified": "13384714854271690",
-            "guid": "556c9562-b832-47a0-b03a-8d854f6a8b51",
-            "id": "64",
-            "name": "Detections",
-            "type": "folder"
+            "date_added": "13384738415569941",
+            "date_last_used": "13384738810382086",
+            "guid": "993c3998-cebe-4a82-a8a9-e037d4430b1f",
+            "id": "74",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Class Slides",
+            "type": "url",
+            "url": "https://1drv.ms/p/s!AvDXyd4cgfxegaFFHULobKa0zIvTBg?e=zsi1RS"
+         }, {
+            "date_added": "13384738797700460",
+            "date_last_used": "13384803154842151",
+            "guid": "a0ce102a-9cdd-4726-829e-b08fb0c4a0ac",
+            "id": "75",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Class Labs",
+            "type": "url",
+            "url": "https://1drv.ms/w/s!AvDXyd4cgfxegaI376HTIo8rWGhxKw?e=Ub1kC3"
          } ],
          "date_added": "13242893379423635",
          "date_last_used": "0",
-         "date_modified": "13384714793916369",
+         "date_modified": "13384814676808598",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks bar",
