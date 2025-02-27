@@ -1,30 +1,9 @@
 #!/bin/bash
 # wget https://raw.githubusercontent.com/clr2of8/PurpleTeaming/refs/heads/main/Tools/linux-vm-setup.sh -O linux-vm-setup.sh; chmod +x linux-vm-setup.sh; ./linux-vm-setup.sh
 
-echo "****Installing Git,pip3,curl****"
+echo "********"
 sudo apt update
-sudo apt install git python3-pip curl npm nodejs ca-certificates -y
-
-echo "****Installing GO****"
-sudo apt install golang-go -y
-
-echo "****Installing MITRE CALDERA v5.0.0****"
-sudo apt install upx python3.12-venv -y
-cd ~
-git clone https://github.com/mitre/caldera.git --recursive --tag 5.0.0
-mv 5.0.0/ caldera
-cd caldera
-python3 -m venv .venv
-source .venv/bin/activate
-sudo .venv/bin/python3 -m pip install -r requirements.txt
-cp conf/default.yml conf/local.yml
-sed -i -r "s/: admin.*$/: AtomicRedTeam1\!/g" conf/local.yml
-sed -i -r "s/admin: /art: /g" conf/local.yml
-# fix remote login bug https://github.com/mitre/caldera/issues/2901
-sudo kill -9 $(sudo lsof -t -i :8888)
-sed -i -r "s/app.frontend.api_base_url: .*$/app.frontend.api_base_url: http:\/\/linux.cloudlab.lan:8888/g" conf/local.yml
-sed -i -r "s/app.contact.http: .*$/app.contact.http: http:\/\/linux.cloudlab.lan:8888/g" conf/local.yml
-.venv/bin/python3 server.py --build &
+sudo apt install git curl -y
 
 echo "****Installing VECTR****"
 echo '127.0.0.1 linux.cloudlab.lan' | sudo tee -a /etc/hosts
@@ -46,7 +25,22 @@ cd /opt/vectr
 sudo docker compose down
 sudo docker compose up -d
 
-echo "****Install openCTI and openBAS***"
+echo "****Installing MITRE CALDERA v5.0.0****"
+cd ~
+git clone https://github.com/mitre/caldera.git --recursive --tag 5.0.0
+mv 5.0.0/ caldera
+cd caldera
+cp conf/default.yml conf/local.yml
+sed -i -r "s/: admin.*$/: AtomicRedTeam1\!/g" conf/local.yml
+sed -i -r "s/admin: /art: /g" conf/local.yml
+# fix remote login bug https://github.com/mitre/caldera/issues/2901
+sudo kill -9 $(sudo lsof -t -i :8888)
+sed -i -r "s/app.frontend.api_base_url: .*$/app.frontend.api_base_url: http:\/\/linux.cloudlab.lan:8888/g" conf/local.yml
+sed -i -r "s/app.contact.http: .*$/app.contact.http: http:\/\/linux.cloudlab.lan:8888/g" conf/local.yml
+sudo docker build . --build-arg WIN_BUILD=true -t caldera:latest
+sudo docker run -p 8888:8888 caldera:latest
+
+echo "****Install OpenBAS***"
 mkdir ~/openbas
 cd ~/openbas
 git clone https://github.com/OpenBAS-Platform/docker.git
@@ -60,6 +54,7 @@ sed -i -r "s/00000000-0000-0000-0000-000000000000/38da7e67-112c-4d53-bb9b-9d25fb
 sed -i -r "s/OPENBAS_ADMIN_TOKEN=ChangeMe # Should be a valid UUID/OPENBAS_ADMIN_TOKEN=38da7e67-112c-4d53-bb9b-9d25fbc96371/g" .env
 sudo docker compose -f docker-compose.yml -f docker-compose.atomic-red-team.yml up -d
 
+echo "****Install OpenCTI***"
 mkdir ~/opencti
 cd ~/opencti
 git clone https://github.com/OpenCTI-Platform/docker.git
@@ -78,5 +73,5 @@ echo RABBITMQ_VM_MEMORY_HIGH_WATERMARK=0.8 >> .env
 sudo docker compose up -d
 # sudo docker compose down -v
 
-
 echo "****Done with Linux VM Setup****"
+echo "You need to manually install the art user in VECTR and create an Attack Simulation assessment"
