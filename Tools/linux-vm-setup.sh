@@ -9,7 +9,7 @@ echo "****Installing GO****"
 sudo apt install golang-go -y
 
 echo "****Installing MITRE CALDERA v5.0.0****"
-sudo apt install upx, python3.12-venv -y
+sudo apt install upx python3.12-venv -y
 cd ~
 git clone https://github.com/mitre/caldera.git --recursive --tag 5.0.0
 mv 5.0.0/ caldera
