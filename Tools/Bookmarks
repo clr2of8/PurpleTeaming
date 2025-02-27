@@ -1,5 +1,5 @@
 {
-   "checksum": "696d05a12ebbff866dff4678174780c5",
+   "checksum": "fbfeaaed5098f32cb7581ba30236a8a6",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -158,6 +158,14 @@
                "type": "url",
                "url": "https://github.com/redcanaryco/atomic-red-team/tree/master/atomics/Indexes/Attack-Navigator-Layers"
             }, {
+               "date_added": "13384924809491790",
+               "date_last_used": "0",
+               "guid": "312127ec-6cad-43f7-abe3-ffd27fde3774",
+               "id": "90",
+               "name": "Atomic Test Generator | atomicgen.io",
+               "type": "url",
+               "url": "https://atomicgen.io/"
+            }, {
                "date_added": "13323630724841147",
                "date_last_used": "13384719734440568",
                "guid": "2983a370-3168-48c6-86f1-d195de104e04",
@@ -195,7 +203,7 @@
             } ],
             "date_added": "13242893495310769",
             "date_last_used": "0",
-            "date_modified": "13384717302417959",
+            "date_modified": "13384924822007018",
             "guid": "c4143e9a-b18b-4299-b178-88c142477992",
             "id": "21",
             "name": "ART",
@@ -203,7 +211,7 @@
          }, {
             "children": [ {
                "date_added": "13253332350982437",
-               "date_last_used": "13384747483642196",
+               "date_last_used": "13385150152513072",
                "guid": "0d112d57-0c96-445b-a439-0add40d1dc5d",
                "id": "35",
                "name": "VECTR Server",
@@ -255,7 +263,7 @@
          }, {
             "children": [ {
                "date_added": "13243046588104900",
-               "date_last_used": "13323393828464242",
+               "date_last_used": "13385150795420314",
                "guid": "3f4c5238-96e6-42b4-8009-1c204fbc285b",
                "id": "41",
                "name": "CALDERA Server",
@@ -271,7 +279,7 @@
                "url": "https://caldera.readthedocs.io/en/latest/"
             }, {
                "date_added": "13246084120371359",
-               "date_last_used": "13384717211036089",
+               "date_last_used": "13385146922243600",
                "guid": "82fff951-20a2-481b-b73d-690d5a6e9932",
                "id": "43",
                "name": "CALDERA GitHub",
@@ -351,6 +359,116 @@
             "type": "folder"
          }, {
             "children": [ {
+               "date_added": "13385145508202668",
+               "date_last_used": "0",
+               "guid": "12e3089e-b69c-4a69-ad48-3dcdbe96cdd1",
+               "id": "95",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "OpenCTI Server | LAB",
+               "type": "url",
+               "url": "http://linux.cloudlab.lan:7080/"
+            }, {
+               "date_added": "13385166375757220",
+               "date_last_used": "0",
+               "guid": "d483fca7-1aa7-49ee-9d38-4505872e8bcc",
+               "id": "97",
+               "name": "OpenCTI by Filigran",
+               "type": "url",
+               "url": "https://filigran.io/solutions/open-cti/"
+            }, {
+               "date_added": "13385166414415913",
+               "date_last_used": "0",
+               "guid": "9e5b07f9-00f4-44f1-98a9-16e704a4438d",
+               "id": "98",
+               "name": "OpenCTI Documentation",
+               "type": "url",
+               "url": "https://docs.opencti.io/latest/"
+            }, {
+               "date_added": "13385166451494860",
+               "date_last_used": "0",
+               "guid": "1dd1fcc5-be17-472d-8f42-070cbd1e1ae7",
+               "id": "99",
+               "name": "OpenCTI GitHub",
+               "type": "url",
+               "url": "https://github.com/OpenCTI-Platform/opencti"
+            }, {
+               "date_added": "13385166491677564",
+               "date_last_used": "0",
+               "guid": "6a809214-d0bc-466c-9311-b9328b671713",
+               "id": "100",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Slack Invite",
+               "type": "url",
+               "url": "https://community.filigran.io/?_gl=1*ld7d3p*_gcl_au*MTgxNjY2MjIzOS4xNzQwMjQ2NzQ2"
+            } ],
+            "date_added": "13385145424013836",
+            "date_last_used": "0",
+            "date_modified": "13385166491677564",
+            "guid": "5674665a-962e-4ed7-ae3f-0afebfc69adb",
+            "id": "94",
+            "name": "OpenCTI",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13385102448033943",
+               "date_last_used": "13385150135527518",
+               "guid": "aab5788d-bc4e-4cdb-a9a3-bcde13090689",
+               "id": "93",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "OpenBAS Server | Lab",
+               "type": "url",
+               "url": "http://linux.cloudlab.lan:8080/"
+            }, {
+               "date_added": "13384916972913191",
+               "date_last_used": "13385166282599990",
+               "guid": "249498f7-aec5-46b7-90e9-675dcd4deace",
+               "id": "82",
+               "name": "OpenBAS by Filigran",
+               "type": "url",
+               "url": "https://filigran.io/solutions/open-bas/"
+            }, {
+               "date_added": "13385081210809453",
+               "date_last_used": "13385166400162713",
+               "guid": "fb7e7fa3-2227-4a4c-a2c0-38a00e7a2edf",
+               "id": "91",
+               "name": "OpenBAS Documentation",
+               "type": "url",
+               "url": "https://docs.openbas.io/latest/"
+            }, {
+               "date_added": "13384916977734160",
+               "date_last_used": "13385166432584823",
+               "guid": "5b655995-cc22-4adc-997a-c300a3c5b321",
+               "id": "83",
+               "name": "OpenBAS GitHub",
+               "type": "url",
+               "url": "https://github.com/OpenBAS-Platform/openbas"
+            }, {
+               "date_added": "13384917070224790",
+               "date_last_used": "0",
+               "guid": "5657806b-04e7-4416-b659-5422f112e6bc",
+               "id": "85",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Slack Invite",
+               "type": "url",
+               "url": "https://community.filigran.io/?_gl=1*ld7d3p*_gcl_au*MTgxNjY2MjIzOS4xNzQwMjQ2NzQ2"
+            } ],
+            "date_added": "13384917047342692",
+            "date_last_used": "0",
+            "date_modified": "13385166274793768",
+            "guid": "f51ae3bb-0e58-4dc5-bc84-3dfe06394977",
+            "id": "84",
+            "name": "OpenBAS",
+            "type": "folder"
+         }, {
+            "children": [ {
                "date_added": "13323563107295884",
                "date_last_used": "13384716004179796",
                "guid": "246cc2fd-e2b6-4049-85b2-aad646c9fc1d",
@@ -370,8 +488,16 @@
                "type": "url",
                "url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2Fmitre-attack%2Fcar%2Fmaster%2Fdocs%2Fcar_attack%2Fcar_attack.json"
             }, {
+               "date_added": "13384921163829066",
+               "date_last_used": "0",
+               "guid": "be1dde32-cda8-40cb-b66a-bd1a4a5096df",
+               "id": "87",
+               "name": "Sigma - SIEM Detection Format | The shareable detection format for security professionals.",
+               "type": "url",
+               "url": "https://sigmahq.io/"
+            }, {
                "date_added": "13323563124949095",
-               "date_last_used": "13384800193751063",
+               "date_last_used": "13384923006461263",
                "guid": "143d1754-d053-4c10-9025-6ae40af3f1cd",
                "id": "54",
                "meta_info": {
@@ -434,10 +560,26 @@
                "name": "Sigma CLI",
                "type": "url",
                "url": "https://github.com/SigmaHQ/sigma-cli"
+            }, {
+               "date_added": "13384921596190613",
+               "date_last_used": "0",
+               "guid": "5feb896f-b0c0-4765-a006-00a515a8fa1c",
+               "id": "88",
+               "name": "SigmaHQ Rule Creation · Streamlit",
+               "type": "url",
+               "url": "https://sigmahq.streamlit.app/"
+            }, {
+               "date_added": "13384923109851689",
+               "date_last_used": "0",
+               "guid": "90770318-1321-467c-9c6f-9f79db71dc4f",
+               "id": "89",
+               "name": "sigconverter.io - sigma rule converter",
+               "type": "url",
+               "url": "https://sigconverter.io/#version=1.0.5&backend=splunk&format=default&pipeline=&rule=dGl0bGU6IFN1c3BpY2lvdXMgU1lTVEVNIFVzZXIgUHJvY2VzcyBDcmVhdGlvbgppZDogMjYxN2U3ZWQtYWRiNy00MGJhLWIwZjMtOGY5OTQ1ZmU2YzA5CnN0YXR1czogdGVzdApkZXNjcmlwdGlvbjogRGV0ZWN0cyBhIHN1c3BpY2lvdXMgcHJvY2VzcyBjcmVhdGlvbiBhcyBTWVNURU0gdXNlciAoc3VzcGljaW91cyBwcm9ncmFtIG9yIGNvbW1hbmQgbGluZSBwYXJhbWV0ZXIpCnJlZmVyZW5jZXM6CiAgICAtIEludGVybmFsIFJlc2VhcmNoCiAgICAtIGh0dHBzOi8vdG9vbHMudGhlaGFja2VyLnJlY2lwZXMvbWltaWthdHovbW9kdWxlcwphdXRob3I6IEZsb3JpYW4gUm90aCAocnVsZSksIERhdmlkIEFORFJFIChhZGRpdGlvbmFsIGtleXdvcmRzKQpkYXRlOiAyMDIxLTEyLTIwCm1vZGlmaWVkOiAyMDIyLTA0LTI3CmxvZ3NvdXJjZToKICAgIGNhdGVnb3J5OiBwcm9jZXNzX2NyZWF0aW9uCiAgICBwcm9kdWN0OiB3aW5kb3dzCmRldGVjdGlvbjoKICAgIHNlbGVjdGlvbjoKICAgICAgICBJbnRlZ3JpdHlMZXZlbDogU3lzdGVtCiAgICAgICAgVXNlcnxjb250YWluczogIyBjb3ZlcnMgbWFueSBsYW5ndWFnZSBzZXR0aW5ncwogICAgICAgICAgICAtICdBVVRIT1JJJwogICAgICAgICAgICAtICdBVVRPUkknCiAgICBzZWxlY3Rpb25fc3BlY2lhbDoKICAgICAgICAtIEltYWdlfGVuZHN3aXRoOgogICAgICAgICAgICAtICdcY2FsYy5leGUnCiAgICAgICAgICAgIC0gJ1x3c2NyaXB0LmV4ZScKICAgICAgICAgICAgLSAnXGNzY3JpcHQuZXhlJwogICAgICAgICAgICAtICdcaGguZXhlJwogICAgICAgICAgICAtICdcbXNodGEuZXhlJwogICAgICAgICAgICAtICdcZm9yZmlsZXMuZXhlJwogICAgICAgICAgICAtICdccGluZy5leGUnCiAgICAgICAgLSBDb21tYW5kTGluZXxjb250YWluczoKICAgICAgICAgICAgIyAtICdzYyBzdG9wICcgIyBzdG9wcyBhIHN5c3RlbSBzZXJ2aWNlICMgY2F1c2VzIEZQcwogICAgICAgICAgICAtICcgLU5vUCAnICAjIE9mdGVuIHVzZWQgaW4gbWFsaWNpb3VzIFBvd2VyU2hlbGwgY29tbWFuZHMKICAgICAgICAgICAgLSAnIC1XIEhpZGRlbiAnICAjIE9mdGVuIHVzZWQgaW4gbWFsaWNpb3VzIFBvd2VyU2hlbGwgY29tbWFuZHMKICAgICAgICAgICAgLSAnIC1kZWNvZGUgJyAgIyBVc2VkIHdpdGggY2VydHV0aWwKICAgICAgICAgICAgLSAnIC9kZWNvZGUgJyAgIyBVc2VkIHdpdGggY2VydHV0aWwKICAgICAgICAgICAgLSAnIC91cmxjYWNoZSAnICAjIFVzZWQgd2l0aCBjZXJ0dXRpbAogICAgICAgICAgICAtICcgLXVybGNhY2hlICcgICMgVXNlZCB3aXRoIGNlcnR1dGlsCiAgICAgICAgICAgIC0gJyAtZSogSkFCJyAgIyBQb3dlclNoZWxsIGVuY29kZWQgY29tbWFuZHMKICAgICAgICAgICAgLSAnIC1lKiBTVVZZSScgICMgUG93ZXJTaGVsbCBlbmNvZGVkIGNvbW1hbmRzCiAgICAgICAgICAgIC0gJyAtZSogU1FCRkFGZ0EnICAjIFBvd2VyU2hlbGwgZW5jb2RlZCBjb21tYW5kcwogICAgICAgICAgICAtICcgLWUqIGFXVjRJJyAgIyBQb3dlclNoZWxsIGVuY29kZWQgY29tbWFuZHMKICAgICAgICAgICAgLSAnIC1lKiBJQUInICAjIFBvd2VyU2hlbGwgbmNvZGVkIGNvbW1hbmRzCiAgICAgICAgICAgIC0gJyAtZSogUEFBJyAgIyBQb3dlclNoZWxsIGVuY29kZWQgY29tbWFuZHMKICAgICAgICAgICAgLSAnIC1lKiBhUUJsQUhnQScgICMgUG93ZXJTaGVsbCBlbmNvZGVkIGNvbW1hbmRzCiAgICAgICAgICAgIC0gJ3Zzc2FkbWluIGRlbGV0ZSBzaGFkb3dzJyAgIyBSYW5zb213YXJlCiAgICAgICAgICAgIC0gJ3JlZyBTQVZFIEhLTE0nICAjIHNhdmUgcmVnaXN0cnkgU0FNIC0gc3lza2V5IGV4dHJhY3Rpb24KICAgICAgICAgICAgLSAnIC1tYSAnICAjIFByb2NEdW1wCiAgICAgICAgICAgIC0gJ01pY3Jvc29mdFxXaW5kb3dzXEN1cnJlbnRWZXJzaW9uXFJ1bicgICMgUnVuIGtleSBpbiBjb21tYW5kIGxpbmUgLSBvZnRlbiBpbiBjb21iaW5hdGlvbiB3aXRoIFJFRyBBREQKICAgICAgICAgICAgLSAnLmRvd25sb2Fkc3RyaW5nKCcgICMgUG93ZXJTaGVsbCBkb3dubG9hZCBjb21tYW5kCiAgICAgICAgICAgIC0gJy5kb3dubG9hZGZpbGUoJyAgIyBQb3dlclNoZWxsIGRvd25sb2FkIGNvbW1hbmQKICAgICAgICAgICAgLSAnIC90aWNrZXQ6JyAgIyBSdWJldXMKICAgICAgICAgICAgLSAnZHBhcGk6OicgICAgICNNaW1pa2F0egogICAgICAgICAgICAtICdldmVudDo6Y2xlYXInICAgICAgICAjTWltaWthdHoKICAgICAgICAgICAgLSAnZXZlbnQ6OmRyb3AnICAgICAjTWltaWthdHoKICAgICAgICAgICAgLSAnaWQ6Om1vZGlmeScgICAgICAjTWltaWthdHoKICAgICAgICAgICAgLSAna2VyYmVyb3M6OicgICAgICAgI01pbWlrYXR6CiAgICAgICAgICAgIC0gJ2xzYWR1bXA6OicgICAgICAjTWltaWthdHoKICAgICAgICAgICAgLSAnbWlzYzo6JyAgICAgI01pbWlrYXR6CiAgICAgICAgICAgIC0gJ3ByaXZpbGVnZTo6JyAgICAgICAjTWltaWthdHoKICAgICAgICAgICAgLSAncnBjOjonICAgICAgI01pbWlrYXR6CiAgICAgICAgICAgIC0gJ3Nla3VybHNhOjonICAgICAgICNNaW1pa2F0egogICAgICAgICAgICAtICdzaWQ6OicgICAgICAgICNNaW1pa2F0egogICAgICAgICAgICAtICd0b2tlbjo6JyAgICAgICNNaW1pa2F0egogICAgICAgICAgICAtICd2YXVsdDo6Y3JlZCcgICAgICNNaW1pa2F0egogICAgICAgICAgICAtICd2YXVsdDo6bGlzdCcgICAgICNNaW1pa2F0egogICAgICAgICAgICAtICcgcDo6ZCAnICAjIE1pbWlrYXR6CiAgICAgICAgICAgIC0gJztpZXgoJyAgIyBQb3dlclNoZWxsIElFWAogICAgICAgICAgICAtICdNaW5pRHVtcCcgICMgUHJvY2VzcyBkdW1waW5nIG1ldGhvZCBhcGFydCBmcm9tIHByb2NkdW1wCiAgICAgICAgICAgIC0gJ25ldCB1c2VyICcKICAgIGNvbmRpdGlvbjogYWxsIG9mIHNlbGVjdGlvbioKZmFsc2Vwb3NpdGl2ZXM6CiAgICAtIEFkbWluaXN0cmF0aXZlIGFjdGl2aXR5CiAgICAtIFNjcmlwdHMgYW5kIGFkbWluaXN0cmF0aXZlIHRvb2xzIHVzZWQgaW4gdGhlIG1vbml0b3JlZCBlbnZpcm9ubWVudAogICAgLSBNb25pdG9yaW5nIGFjdGl2aXR5CmxldmVsOiBoaWdo&pipelineYml="
             } ],
             "date_added": "13323563082673091",
             "date_last_used": "0",
-            "date_modified": "13384799267035129",
+            "date_modified": "13384923109851689",
             "guid": "17faa058-a5f1-4812-98dc-fcf3a1b6a5c6",
             "id": "52",
             "name": "Detection Rule Repositories",
@@ -543,7 +685,7 @@
          } ],
          "date_added": "13242893379423635",
          "date_last_used": "0",
-         "date_modified": "13384814676808598",
+         "date_modified": "13385145429059966",
          "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
          "id": "1",
          "name": "Bookmarks bar",
