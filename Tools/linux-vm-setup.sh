@@ -49,5 +49,35 @@ croncmd="sleep 30 && docker compose up -d"
 cronjob="@reboot $croncmd"
 ( crontab -l -u ubuntu | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -u ubuntu -
 
+echo "****Install openCTI and openBAS***"
+mkdir ~/openbas
+cd ~/openbas
+git clone https://github.com/OpenBAS-Platform/docker.git
+cd docker
+mv .env.sample .env
+sed -i -r "s/OPENBAS_ADMIN_EMAIL=ChangeMe@domain.com/OPENBAS_ADMIN_EMAIL=art@art.com/g" .env
+sed -i -r "s/OPENBAS_ADMIN_PASSWORD=ChangeMe/OPENBAS_ADMIN_PASSWORD=AtomicRedTeam1\!/g" .env
+echo RABBITMQ_VM_MEMORY_HIGH_WATERMARK=0.8 >> .env
+sed -i -r "s/OPENBAS_MAIL_IMAP_ENABLED=true/OPENBAS_MAIL_IMAP_ENABLED=false/g" .env
+sed -i -r "s/00000000-0000-0000-0000-000000000000/38da7e67-112c-4d53-bb9b-9d25fbc96371/g" .env
+sed -i -r "s/OPENBAS_ADMIN_TOKEN=ChangeMe # Should be a valid UUID/OPENBAS_ADMIN_TOKEN=38da7e67-112c-4d53-bb9b-9d25fbc96371/g" .env
+sudo docker compose -f docker-compose.yml -f docker-compose.atomic-red-team.yml up -d
+
+mkdir ~/opencti
+cd ~/opencti
+git clone https://github.com/OpenCTI-Platform/docker.git
+cd docker
+mv .env.sample .env
+sed -i -r "s/OPENCTI_ADMIN_EMAIL=admin@opencti.io/OPENCTI_ADMIN_EMAIL=art@art.com/g" .env
+sed -i -r "s/OPENCTI_ADMIN_PASSWORD=changeme/OPENCTI_ADMIN_PASSWORD=AtomicRedTeam1\!/g" .env
+sed -i -r "s/OPENCTI_ADMIN_TOKEN=ChangeMe_UUIDv4/OPENBAS_ADMIN_TOKEN=38da7e67-112c-4d53-bb9b-9d25fbc96371/g" .env
+sed -i -r "s/MINIO_ROOT_USER=opencti/MINIO_ROOT_USER=ChangeMeAccess/g" .env
+sed -i -r "s/MINIO_ROOT_PASSWORD=changeme/MINIO_ROOT_PASSWORD=ChangeMeKey/g" .env
+sed -i -r "s/RABBITMQ_DEFAULT_USER=opencti/RABBITMQ_DEFAULT_USER=ChangeMe/g" .env
+sed -i -r "s/RABBITMQ_DEFAULT_PASS=ChangeMe/RABBITMQ_DEFAULT_PASS=ChangeMe/g" .env
+echo RABBITMQ_VM_MEMORY_HIGH_WATERMARK=0.8 >> .env
+sudo docker compose up -d
+# sudo docker compose down -v
+
 
 echo "****Done with Linux VM Setup****"
