@@ -39,7 +39,7 @@ sudo apt update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 sudo mkdir -p /opt/vectr
 cd /opt/vectr
-sudo wget https://github.com/SecurityRiskAdvisors/VECTR/releases/download/ce-9.5.3/sra-vectr-runtime-9.5.3-ce.zip -nc
+sudo wget https://github.com/SecurityRiskAdvisors/VECTR/releases/download/ce-9.6.5/sra-vectr-runtime-9.6.5-ce.zip -nc
 sudo unzip sra-vectr-runtime-9.5.3-ce.zip
 sudo sed -i -r "s/VECTR_HOSTNAME\=.*$/VECTR_HOSTNAME=linux.cloudlab.lan/g" /opt/vectr/.env
 cd /opt/vectr
