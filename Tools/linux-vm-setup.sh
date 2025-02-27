@@ -45,9 +45,6 @@ sudo sed -i -r "s/VECTR_HOSTNAME\=.*$/VECTR_HOSTNAME=linux.cloudlab.lan/g" /opt/
 cd /opt/vectr
 sudo docker compose down
 sudo docker compose up -d
-croncmd="sleep 30 && docker compose up -d"
-cronjob="@reboot $croncmd"
-( crontab -l -u ubuntu | grep -v -F "$croncmd" ; echo "$cronjob" ) | crontab -u ubuntu -
 
 echo "****Install openCTI and openBAS***"
 mkdir ~/openbas
