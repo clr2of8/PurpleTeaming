@@ -37,8 +37,10 @@ sed -i -r "s/admin: /art: /g" conf/local.yml
 sudo kill -9 $(sudo lsof -t -i :8888)
 sed -i -r "s/app.frontend.api_base_url: .*$/app.frontend.api_base_url: http:\/\/linux.cloudlab.lan:8888/g" conf/local.yml
 sed -i -r "s/app.contact.http: .*$/app.contact.http: http:\/\/linux.cloudlab.lan:8888/g" conf/local.yml
-sudo docker build . --build-arg WIN_BUILD=true -t caldera:latest
-sudo docker run -p 8888:8888 caldera:latest
+cp plugins/magma/.env.template plugins/magma/.env
+sed -i -r "s/VITE_CALDERA_URL=http:\/\/localhost:8888/VITE_CALDERA_URL=http:\/\/linux.cloudlab.lan:8888/g" plugins/magma/.env
+sudo docker build . --build-arg WIN_BUILD=true -t caldera:5.0.0
+sudo docker run -p 8888:8888 caldera:5.0.0
 
 echo "****Install OpenBAS***"
 mkdir ~/openbas
