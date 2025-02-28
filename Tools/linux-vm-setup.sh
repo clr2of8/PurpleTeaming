@@ -52,6 +52,7 @@ sed -i -r "s/VITE_CALDERA_URL=http:\/\/localhost:8888/VITE_CALDERA_URL=http:\/\/
 sed -i -r "s/    volumes://g" docker-compose.yml
 sed -i -r "s/      - .\/:\/usr\/src\/app/    restart: always/g" docker-compose.yml
 sed -i -r "s/version: '3'//g" docker-compose.yml
+sed -i -r "s/\- atomic/\- atomicNot/g" Dockerfile
 sudo docker compose build
 sudo docker compose up -d
 
