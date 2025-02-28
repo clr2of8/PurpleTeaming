@@ -81,7 +81,7 @@ sed -i -r "s/OPENCTI_ADMIN_TOKEN=ChangeMe_UUIDv4/OPENCTI_ADMIN_TOKEN=38da7e67-11
 sed -i -r "s/MINIO_ROOT_USER=opencti/MINIO_ROOT_USER=ChangeMeAccess/g" .env
 sed -i -r "s/MINIO_ROOT_PASSWORD=changeme/MINIO_ROOT_PASSWORD=ChangeMeKey/g" .env
 sed -i -r "s/RABBITMQ_DEFAULT_USER=opencti/RABBITMQ_DEFAULT_USER=ChangeMe/g" .env
-sed -i -r "s/RABBITMQ_DEFAULT_PASS=Changeme/RABBITMQ_DEFAULT_PASS=ChangeMe/g" .env
+sed -i -r "s/RABBITMQ_DEFAULT_PASS=changeme/RABBITMQ_DEFAULT_PASS=ChangeMe/g" .env
 sed -i -r "s/localhost:8080/localhost:7080/g" .env
 sed -i -r "s/8080/7080/g" docker-compose.yml
 echo RABBITMQ_VM_MEMORY_HIGH_WATERMARK=0.8 >> .env
