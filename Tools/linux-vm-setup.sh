@@ -5,6 +5,16 @@ echo "********"
 sudo apt update
 sudo apt install git curl -y
 
+mkdir ~/.ssh
+chmod 700 ~/.ssh
+wget https://raw.githubusercontent.com/clr2of8/PurpleTeaming/refs/heads/main/Tools/art -O ~/.ssh/art
+chmod 600 ~/.ssh/art
+wget https://raw.githubusercontent.com/clr2of8/PurpleTeaming/refs/heads/main/Tools/art.pub -O ~/.ssh/art.pub
+chmod 644 ~/.ssh/art.pub
+wget https://raw.githubusercontent.com/clr2of8/PurpleTeaming/refs/heads/main/Tools/authorized_keys -O ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+
+
 echo "****Installing VECTR****"
 echo '127.0.0.1 linux.cloudlab.lan' | sudo tee -a /etc/hosts
 sudo install -m 0755 -d /etc/apt/keyrings
