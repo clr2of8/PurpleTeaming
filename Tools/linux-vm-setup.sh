@@ -25,10 +25,10 @@ cd /opt/vectr
 sudo docker compose down
 sudo docker compose up -d
 
-echo "****Installing MITRE CALDERA v5.0.0****"
+echo "****Installing MITRE CALDERA v5.1.0****"
 cd ~
-git clone https://github.com/mitre/caldera.git --recursive --tag 5.0.0
-mv 5.0.0/ caldera
+git clone https://github.com/mitre/caldera.git --recursive --tag 5.1.0
+mv 5.1.0/ caldera
 cd caldera
 cp conf/default.yml conf/local.yml
 sed -i -r "s/: admin.*$/: AtomicRedTeam1\!/g" conf/local.yml
@@ -37,10 +37,15 @@ sed -i -r "s/admin: /art: /g" conf/local.yml
 sudo kill -9 $(sudo lsof -t -i :8888)
 sed -i -r "s/app.frontend.api_base_url: .*$/app.frontend.api_base_url: http:\/\/linux.cloudlab.lan:8888/g" conf/local.yml
 sed -i -r "s/app.contact.http: .*$/app.contact.http: http:\/\/linux.cloudlab.lan:8888/g" conf/local.yml
+sed -i -r "s/caldera:latest/caldera:5.1.0/g" docker-compose.yml
 cp plugins/magma/.env.template plugins/magma/.env
 sed -i -r "s/VITE_CALDERA_URL=http:\/\/localhost:8888/VITE_CALDERA_URL=http:\/\/linux.cloudlab.lan:8888/g" plugins/magma/.env
-sudo docker build . --build-arg WIN_BUILD=true -t caldera:5.0.0
-sudo docker run -p 8888:8888 caldera:5.0.0
+sed -i -r "s/    volumes://g" docker-compose.yml
+sed -i -r "s/      - .\/:\/usr\/src\/app//g" docker-compose.yml
+sudo docker compose build
+sudo docker compose up  -d
+#sudo docker build . --build-arg WIN_BUILD=true -t caldera:5.1.0
+#sudo docker run -p 8888:8888 caldera:5.1.0
 
 echo "****Install OpenBAS***"
 mkdir ~/openbas
