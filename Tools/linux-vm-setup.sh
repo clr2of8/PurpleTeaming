@@ -34,18 +34,16 @@ cp conf/default.yml conf/local.yml
 sed -i -r "s/: admin.*$/: AtomicRedTeam1\!/g" conf/local.yml
 sed -i -r "s/admin: /art: /g" conf/local.yml
 # fix remote login bug https://github.com/mitre/caldera/issues/2901
-sudo kill -9 $(sudo lsof -t -i :8888)
 sed -i -r "s/app.frontend.api_base_url: .*$/app.frontend.api_base_url: http:\/\/linux.cloudlab.lan:8888/g" conf/local.yml
 sed -i -r "s/app.contact.http: .*$/app.contact.http: http:\/\/linux.cloudlab.lan:8888/g" conf/local.yml
 sed -i -r "s/caldera:latest/caldera:5.1.0/g" docker-compose.yml
 cp plugins/magma/.env.template plugins/magma/.env
 sed -i -r "s/VITE_CALDERA_URL=http:\/\/localhost:8888/VITE_CALDERA_URL=http:\/\/linux.cloudlab.lan:8888/g" plugins/magma/.env
 sed -i -r "s/    volumes://g" docker-compose.yml
-sed -i -r "s/      - .\/:\/usr\/src\/app//g" docker-compose.yml
+sed -i -r "s/      - .\/:\/usr\/src\/app/    restart: always/g" docker-compose.yml
+sed -i -r "s/version: '3'//g" docker-compose.yml
 sudo docker compose build
-sudo docker compose up  -d
-#sudo docker build . --build-arg WIN_BUILD=true -t caldera:5.1.0
-#sudo docker run -p 8888:8888 caldera:5.1.0
+sudo docker compose up -d
 
 echo "****Install OpenBAS***"
 mkdir ~/openbas
