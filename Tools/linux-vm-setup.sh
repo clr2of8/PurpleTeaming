@@ -68,6 +68,7 @@ echo RABBITMQ_VM_MEMORY_HIGH_WATERMARK=0.8 >> .env
 sed -i -r "s/OPENBAS_MAIL_IMAP_ENABLED=true/OPENBAS_MAIL_IMAP_ENABLED=false/g" .env
 sed -i -r "s/00000000-0000-0000-0000-000000000000/38da7e67-112c-4d53-bb9b-9d25fbc96371/g" .env
 sed -i -r "s/OPENBAS_ADMIN_TOKEN=ChangeMe # Should be a valid UUID/OPENBAS_ADMIN_TOKEN=38da7e67-112c-4d53-bb9b-9d25fbc96371/g" .env
+sed -i -r "s/localhost:8080/linux.cloudlab.lan:8080/g" docker-compose.yml
 sudo docker compose -f docker-compose.yml -f docker-compose.atomic-red-team.yml up -d
 
 echo "****Install OpenCTI***"
