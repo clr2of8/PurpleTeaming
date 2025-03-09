@@ -73,6 +73,8 @@ sed -i -r "s/OPENBAS_ADMIN_TOKEN=ChangeMe # Should be a valid UUID/OPENBAS_ADMIN
 sed -i -r "s/localhost:8080/linux.cloudlab.lan:8080/g" docker-compose.yml
 sudo docker compose -f docker-compose.yml -f docker-compose.atomic-red-team.yml up -d
 # sudo docker compose down -v
+# sudo docker container ls
+# sudo docker logs docker-collector-atomic-red-team-1
 
 echo "****Done with Linux VM Setup****"
 echo "You need to manually install the art user in VECTR and create an Attack Simulation assessment"
