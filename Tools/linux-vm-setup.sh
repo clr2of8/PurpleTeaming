@@ -61,6 +61,8 @@ mkdir ~/openbas
 cd ~/openbas
 git clone https://github.com/OpenBAS-Platform/docker.git
 cd docker
+# Pin openBAS version to specific GitHub commit
+git checkout 55131c9129b2eefe730df3e7a69e03800c932fc0
 mv .env.sample .env
 sed -i -r "s/OPENBAS_ADMIN_EMAIL=ChangeMe@domain.com/OPENBAS_ADMIN_EMAIL=art@art.com/g" .env
 sed -i -r "s/OPENBAS_ADMIN_PASSWORD=ChangeMe/OPENBAS_ADMIN_PASSWORD=AtomicRedTeam1\!/g" .env
