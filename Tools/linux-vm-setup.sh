@@ -70,24 +70,6 @@ sed -i -r "s/00000000-0000-0000-0000-000000000000/38da7e67-112c-4d53-bb9b-9d25fb
 sed -i -r "s/OPENBAS_ADMIN_TOKEN=ChangeMe # Should be a valid UUID/OPENBAS_ADMIN_TOKEN=38da7e67-112c-4d53-bb9b-9d25fbc96371/g" .env
 sed -i -r "s/localhost:8080/linux.cloudlab.lan:8080/g" docker-compose.yml
 sudo docker compose -f docker-compose.yml -f docker-compose.atomic-red-team.yml up -d
-
-echo "****Install OpenCTI***"
-mkdir ~/opencti
-cd ~/opencti
-git clone https://github.com/OpenCTI-Platform/docker.git
-cd docker
-mv .env.sample .env
-sed -i -r "s/OPENCTI_ADMIN_EMAIL=admin@opencti.io/OPENCTI_ADMIN_EMAIL=art@art.com/g" .env
-sed -i -r "s/OPENCTI_ADMIN_PASSWORD=changeme/OPENCTI_ADMIN_PASSWORD=AtomicRedTeam1\!/g" .env
-sed -i -r "s/OPENCTI_ADMIN_TOKEN=ChangeMe_UUIDv4/OPENCTI_ADMIN_TOKEN=38da7e67-112c-4d53-bb9b-9d25fbc96371/g" .env
-sed -i -r "s/MINIO_ROOT_USER=opencti/MINIO_ROOT_USER=ChangeMeAccess/g" .env
-sed -i -r "s/MINIO_ROOT_PASSWORD=changeme/MINIO_ROOT_PASSWORD=ChangeMeKey/g" .env
-sed -i -r "s/RABBITMQ_DEFAULT_USER=opencti/RABBITMQ_DEFAULT_USER=ChangeMe/g" .env
-sed -i -r "s/RABBITMQ_DEFAULT_PASS=changeme/RABBITMQ_DEFAULT_PASS=ChangeMe/g" .env
-sed -i -r "s/localhost:8080/localhost:7080/g" .env
-sed -i -r "s/8080/7080/g" docker-compose.yml
-echo RABBITMQ_VM_MEMORY_HIGH_WATERMARK=0.8 >> .env
-sudo docker compose up -d
 # sudo docker compose down -v
 
 echo "****Done with Linux VM Setup****"
