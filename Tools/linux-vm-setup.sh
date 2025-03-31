@@ -40,6 +40,8 @@ cd ~
 git clone https://github.com/mitre/caldera.git --recursive --tag 5.1.0
 mv 5.1.0/ caldera
 cd caldera
+# Pin CALDERA version to specific GitHub commit
+git checkout 6d3d853b89f4d5d5ce204eb86acf0e1d5d6cedb9
 cp conf/default.yml conf/local.yml
 sed -i -r "s/: admin.*$/: AtomicRedTeam1\!/g" conf/local.yml
 sed -i -r "s/admin: /art: /g" conf/local.yml
