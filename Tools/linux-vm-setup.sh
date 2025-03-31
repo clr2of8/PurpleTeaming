@@ -3,7 +3,7 @@
 
 echo "********"
 sudo apt update
-sudo apt install git curl -y
+sudo apt install git curl gedit -y
 
 mkdir ~/.ssh
 chmod 700 ~/.ssh
