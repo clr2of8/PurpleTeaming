@@ -1,5 +1,5 @@
 {
-   "checksum": "cfd9b1fb9ad45cc7b2c29bd8f11b9762",
+   "checksum": "fe12adf0f8593e136574440f08c8ed5f",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -142,6 +142,14 @@
                "type": "url",
                "url": "https://github.com/redcanaryco/atomic-red-team/tree/master/atomics"
             }, {
+               "date_added": "13389035063487797",
+               "date_last_used": "0",
+               "guid": "56f2d1b6-b191-44dd-8b58-09c0c93f6986",
+               "id": "110",
+               "name": "Invoke-AtomicRedTeam Documentation",
+               "type": "url",
+               "url": "https://www.atomicredteam.io/invoke-atomicredteam/docs"
+            }, {
                "date_added": "0",
                "date_last_used": "13384717277225147",
                "guid": "6c47529e-ba0b-4e3d-b959-0d8d29d102b6",
@@ -211,7 +219,7 @@
             } ],
             "date_added": "13242893495310769",
             "date_last_used": "0",
-            "date_modified": "13384924822007018",
+            "date_modified": "13389035067875750",
             "guid": "c4143e9a-b18b-4299-b178-88c142477992",
             "id": "21",
             "name": "ART",
@@ -270,17 +278,25 @@
             "type": "folder"
          }, {
             "children": [ {
+               "date_added": "13389033534079606",
+               "date_last_used": "0",
+               "guid": "1478cab2-2a19-4a02-9d15-ccacd084a35c",
+               "id": "109",
+               "name": "MACAT - Adversary Simulation",
+               "type": "url",
+               "url": "https://macat.io/"
+            }, {
                "date_added": "13384738897472134",
                "date_last_used": "13385532290168315",
                "guid": "35d711de-4a47-4c0e-ae7e-fd897b2f39d4",
                "id": "76",
-               "name": "MACAT Download",
+               "name": "MACAT Releases",
                "type": "url",
                "url": "https://github.com/thebleucheese/macat-ext/releases"
             } ],
             "date_added": "13384738322625829",
             "date_last_used": "0",
-            "date_modified": "13384738897472134",
+            "date_modified": "13389033537317414",
             "guid": "2a5ccfca-4c52-4c8e-99e0-7fb7f5f4cbe2",
             "id": "73",
             "name": "MACAT",
