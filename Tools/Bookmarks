@@ -1,5 +1,5 @@
 {
-   "checksum": "fe12adf0f8593e136574440f08c8ed5f",
+   "checksum": "d4e0e55ad29b40478e7bac080cd1ab82",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -119,7 +119,7 @@
          }, {
             "children": [ {
                "date_added": "13323630419729742",
-               "date_last_used": "13385345633357887",
+               "date_last_used": "13389072715441065",
                "guid": "6d40c8c9-ffd2-4caa-baf6-fcf86a52b112",
                "id": "29",
                "name": "Explore Atomic Red Team",
@@ -127,7 +127,7 @@
                "url": "https://atomicredteam.io/"
             }, {
                "date_added": "0",
-               "date_last_used": "13385966233121642",
+               "date_last_used": "13389040547818372",
                "guid": "43c024fc-bf2f-453e-b0dd-dddeeb2b14e8",
                "id": "22",
                "name": "Atomic Red Team GitHub",
@@ -227,10 +227,10 @@
          }, {
             "children": [ {
                "date_added": "13253332350982437",
-               "date_last_used": "13385150152513072",
+               "date_last_used": "13389084199972241",
                "guid": "0d112d57-0c96-445b-a439-0add40d1dc5d",
                "id": "35",
-               "name": "VECTR Server",
+               "name": "VECTR Server | Lab",
                "type": "url",
                "url": "https://linux.cloudlab.lan:8081/"
             }, {
@@ -279,7 +279,7 @@
          }, {
             "children": [ {
                "date_added": "13389033534079606",
-               "date_last_used": "0",
+               "date_last_used": "13389084948707497",
                "guid": "1478cab2-2a19-4a02-9d15-ccacd084a35c",
                "id": "109",
                "name": "MACAT - Adversary Simulation",
@@ -304,10 +304,10 @@
          }, {
             "children": [ {
                "date_added": "13243046588104900",
-               "date_last_used": "13385524078165074",
+               "date_last_used": "13389157004004341",
                "guid": "3f4c5238-96e6-42b4-8009-1c204fbc285b",
                "id": "41",
-               "name": "CALDERA Server",
+               "name": "CALDERA Server | Lab",
                "type": "url",
                "url": "http://linux.cloudlab.lan:8888/"
             }, {
@@ -348,7 +348,7 @@
          }, {
             "children": [ {
                "date_added": "13385102448033943",
-               "date_last_used": "13386009162033897",
+               "date_last_used": "13389046799692276",
                "guid": "aab5788d-bc4e-4cdb-a9a3-bcde13090689",
                "id": "93",
                "meta_info": {
@@ -392,6 +392,14 @@
                "name": "OpenBAS Demo Server",
                "type": "url",
                "url": "https://demo.openbas.io/"
+            }, {
+               "date_added": "13389059515247480",
+               "date_last_used": "0",
+               "guid": "28f56a0b-cec1-442e-8cce-4c714e4601c9",
+               "id": "112",
+               "name": "Filigran Academy",
+               "type": "url",
+               "url": "https://filigran.io/offerings/filigran-academy/"
             }, {
                "date_added": "13384917070224790",
                "date_last_used": "0",
@@ -450,7 +458,7 @@
             } ],
             "date_added": "13384917047342692",
             "date_last_used": "0",
-            "date_modified": "13385955813072146",
+            "date_modified": "13389059527864452",
             "guid": "f51ae3bb-0e58-4dc5-bc84-3dfe06394977",
             "id": "84",
             "name": "OpenBAS",
@@ -458,7 +466,7 @@
          }, {
             "children": [ {
                "date_added": "13384921163829066",
-               "date_last_used": "0",
+               "date_last_used": "13389059625350107",
                "guid": "be1dde32-cda8-40cb-b66a-bd1a4a5096df",
                "id": "87",
                "name": "Sigma - SIEM Detection Format | The shareable detection format for security professionals.",
@@ -466,18 +474,18 @@
                "url": "https://sigmahq.io/"
             }, {
                "date_added": "13323563124949095",
-               "date_last_used": "13386022814510833",
+               "date_last_used": "13389060459328455",
                "guid": "143d1754-d053-4c10-9025-6ae40af3f1cd",
                "id": "54",
                "meta_info": {
                   "power_bookmark_meta": ""
                },
-               "name": "Sigma",
+               "name": "Sigma GitHub",
                "type": "url",
                "url": "https://github.com/SigmaHQ/sigma"
             }, {
                "date_added": "13384715906532256",
-               "date_last_used": "13386022549730671",
+               "date_last_used": "13389061173672222",
                "guid": "4b1878ca-3756-478b-b91c-5fc40912fc7c",
                "id": "66",
                "name": "ATT&CK Nav: Sigma",
@@ -485,28 +493,28 @@
                "url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/SigmaHQ/sigma/refs/heads/master/other/sigma_attack_nav_coverage.json"
             }, {
                "date_added": "13384799246148401",
-               "date_last_used": "13386022753912110",
+               "date_last_used": "13389059977002626",
                "guid": "88935155-0d58-4100-9ddd-5bc7fc9fbefc",
                "id": "77",
-               "name": "Sigma CLI",
+               "name": "Sigma CLI GitHub",
                "type": "url",
                "url": "https://github.com/SigmaHQ/sigma-cli"
             }, {
+               "date_added": "13384923109851689",
+               "date_last_used": "13389060146974719",
+               "guid": "90770318-1321-467c-9c6f-9f79db71dc4f",
+               "id": "89",
+               "name": "sigconverter.io - sigma rule converter",
+               "type": "url",
+               "url": "https://sigconverter.io/"
+            }, {
                "date_added": "13384921596190613",
-               "date_last_used": "0",
+               "date_last_used": "13389060367632730",
                "guid": "5feb896f-b0c0-4765-a006-00a515a8fa1c",
                "id": "88",
                "name": "SigmaHQ Rule Creation · Streamlit",
                "type": "url",
                "url": "https://sigmahq.streamlit.app/"
-            }, {
-               "date_added": "13384923109851689",
-               "date_last_used": "0",
-               "guid": "90770318-1321-467c-9c6f-9f79db71dc4f",
-               "id": "89",
-               "name": "sigconverter.io - sigma rule converter",
-               "type": "url",
-               "url": "https://sigconverter.io/#version=1.0.5&backend=splunk&format=default&pipeline=&rule=dGl0bGU6IFN1c3BpY2lvdXMgU1lTVEVNIFVzZXIgUHJvY2VzcyBDcmVhdGlvbgppZDogMjYxN2U3ZWQtYWRiNy00MGJhLWIwZjMtOGY5OTQ1ZmU2YzA5CnN0YXR1czogdGVzdApkZXNjcmlwdGlvbjogRGV0ZWN0cyBhIHN1c3BpY2lvdXMgcHJvY2VzcyBjcmVhdGlvbiBhcyBTWVNURU0gdXNlciAoc3VzcGljaW91cyBwcm9ncmFtIG9yIGNvbW1hbmQgbGluZSBwYXJhbWV0ZXIpCnJlZmVyZW5jZXM6CiAgICAtIEludGVybmFsIFJlc2VhcmNoCiAgICAtIGh0dHBzOi8vdG9vbHMudGhlaGFja2VyLnJlY2lwZXMvbWltaWthdHovbW9kdWxlcwphdXRob3I6IEZsb3JpYW4gUm90aCAocnVsZSksIERhdmlkIEFORFJFIChhZGRpdGlvbmFsIGtleXdvcmRzKQpkYXRlOiAyMDIxLTEyLTIwCm1vZGlmaWVkOiAyMDIyLTA0LTI3CmxvZ3NvdXJjZToKICAgIGNhdGVnb3J5OiBwcm9jZXNzX2NyZWF0aW9uCiAgICBwcm9kdWN0OiB3aW5kb3dzCmRldGVjdGlvbjoKICAgIHNlbGVjdGlvbjoKICAgICAgICBJbnRlZ3JpdHlMZXZlbDogU3lzdGVtCiAgICAgICAgVXNlcnxjb250YWluczogIyBjb3ZlcnMgbWFueSBsYW5ndWFnZSBzZXR0aW5ncwogICAgICAgICAgICAtICdBVVRIT1JJJwogICAgICAgICAgICAtICdBVVRPUkknCiAgICBzZWxlY3Rpb25fc3BlY2lhbDoKICAgICAgICAtIEltYWdlfGVuZHN3aXRoOgogICAgICAgICAgICAtICdcY2FsYy5leGUnCiAgICAgICAgICAgIC0gJ1x3c2NyaXB0LmV4ZScKICAgICAgICAgICAgLSAnXGNzY3JpcHQuZXhlJwogICAgICAgICAgICAtICdcaGguZXhlJwogICAgICAgICAgICAtICdcbXNodGEuZXhlJwogICAgICAgICAgICAtICdcZm9yZmlsZXMuZXhlJwogICAgICAgICAgICAtICdccGluZy5leGUnCiAgICAgICAgLSBDb21tYW5kTGluZXxjb250YWluczoKICAgICAgICAgICAgIyAtICdzYyBzdG9wICcgIyBzdG9wcyBhIHN5c3RlbSBzZXJ2aWNlICMgY2F1c2VzIEZQcwogICAgICAgICAgICAtICcgLU5vUCAnICAjIE9mdGVuIHVzZWQgaW4gbWFsaWNpb3VzIFBvd2VyU2hlbGwgY29tbWFuZHMKICAgICAgICAgICAgLSAnIC1XIEhpZGRlbiAnICAjIE9mdGVuIHVzZWQgaW4gbWFsaWNpb3VzIFBvd2VyU2hlbGwgY29tbWFuZHMKICAgICAgICAgICAgLSAnIC1kZWNvZGUgJyAgIyBVc2VkIHdpdGggY2VydHV0aWwKICAgICAgICAgICAgLSAnIC9kZWNvZGUgJyAgIyBVc2VkIHdpdGggY2VydHV0aWwKICAgICAgICAgICAgLSAnIC91cmxjYWNoZSAnICAjIFVzZWQgd2l0aCBjZXJ0dXRpbAogICAgICAgICAgICAtICcgLXVybGNhY2hlICcgICMgVXNlZCB3aXRoIGNlcnR1dGlsCiAgICAgICAgICAgIC0gJyAtZSogSkFCJyAgIyBQb3dlclNoZWxsIGVuY29kZWQgY29tbWFuZHMKICAgICAgICAgICAgLSAnIC1lKiBTVVZZSScgICMgUG93ZXJTaGVsbCBlbmNvZGVkIGNvbW1hbmRzCiAgICAgICAgICAgIC0gJyAtZSogU1FCRkFGZ0EnICAjIFBvd2VyU2hlbGwgZW5jb2RlZCBjb21tYW5kcwogICAgICAgICAgICAtICcgLWUqIGFXVjRJJyAgIyBQb3dlclNoZWxsIGVuY29kZWQgY29tbWFuZHMKICAgICAgICAgICAgLSAnIC1lKiBJQUInICAjIFBvd2VyU2hlbGwgbmNvZGVkIGNvbW1hbmRzCiAgICAgICAgICAgIC0gJyAtZSogUEFBJyAgIyBQb3dlclNoZWxsIGVuY29kZWQgY29tbWFuZHMKICAgICAgICAgICAgLSAnIC1lKiBhUUJsQUhnQScgICMgUG93ZXJTaGVsbCBlbmNvZGVkIGNvbW1hbmRzCiAgICAgICAgICAgIC0gJ3Zzc2FkbWluIGRlbGV0ZSBzaGFkb3dzJyAgIyBSYW5zb213YXJlCiAgICAgICAgICAgIC0gJ3JlZyBTQVZFIEhLTE0nICAjIHNhdmUgcmVnaXN0cnkgU0FNIC0gc3lza2V5IGV4dHJhY3Rpb24KICAgICAgICAgICAgLSAnIC1tYSAnICAjIFByb2NEdW1wCiAgICAgICAgICAgIC0gJ01pY3Jvc29mdFxXaW5kb3dzXEN1cnJlbnRWZXJzaW9uXFJ1bicgICMgUnVuIGtleSBpbiBjb21tYW5kIGxpbmUgLSBvZnRlbiBpbiBjb21iaW5hdGlvbiB3aXRoIFJFRyBBREQKICAgICAgICAgICAgLSAnLmRvd25sb2Fkc3RyaW5nKCcgICMgUG93ZXJTaGVsbCBkb3dubG9hZCBjb21tYW5kCiAgICAgICAgICAgIC0gJy5kb3dubG9hZGZpbGUoJyAgIyBQb3dlclNoZWxsIGRvd25sb2FkIGNvbW1hbmQKICAgICAgICAgICAgLSAnIC90aWNrZXQ6JyAgIyBSdWJldXMKICAgICAgICAgICAgLSAnZHBhcGk6OicgICAgICNNaW1pa2F0egogICAgICAgICAgICAtICdldmVudDo6Y2xlYXInICAgICAgICAjTWltaWthdHoKICAgICAgICAgICAgLSAnZXZlbnQ6OmRyb3AnICAgICAjTWltaWthdHoKICAgICAgICAgICAgLSAnaWQ6Om1vZGlmeScgICAgICAjTWltaWthdHoKICAgICAgICAgICAgLSAna2VyYmVyb3M6OicgICAgICAgI01pbWlrYXR6CiAgICAgICAgICAgIC0gJ2xzYWR1bXA6OicgICAgICAjTWltaWthdHoKICAgICAgICAgICAgLSAnbWlzYzo6JyAgICAgI01pbWlrYXR6CiAgICAgICAgICAgIC0gJ3ByaXZpbGVnZTo6JyAgICAgICAjTWltaWthdHoKICAgICAgICAgICAgLSAncnBjOjonICAgICAgI01pbWlrYXR6CiAgICAgICAgICAgIC0gJ3Nla3VybHNhOjonICAgICAgICNNaW1pa2F0egogICAgICAgICAgICAtICdzaWQ6OicgICAgICAgICNNaW1pa2F0egogICAgICAgICAgICAtICd0b2tlbjo6JyAgICAgICNNaW1pa2F0egogICAgICAgICAgICAtICd2YXVsdDo6Y3JlZCcgICAgICNNaW1pa2F0egogICAgICAgICAgICAtICd2YXVsdDo6bGlzdCcgICAgICNNaW1pa2F0egogICAgICAgICAgICAtICcgcDo6ZCAnICAjIE1pbWlrYXR6CiAgICAgICAgICAgIC0gJztpZXgoJyAgIyBQb3dlclNoZWxsIElFWAogICAgICAgICAgICAtICdNaW5pRHVtcCcgICMgUHJvY2VzcyBkdW1waW5nIG1ldGhvZCBhcGFydCBmcm9tIHByb2NkdW1wCiAgICAgICAgICAgIC0gJ25ldCB1c2VyICcKICAgIGNvbmRpdGlvbjogYWxsIG9mIHNlbGVjdGlvbioKZmFsc2Vwb3NpdGl2ZXM6CiAgICAtIEFkbWluaXN0cmF0aXZlIGFjdGl2aXR5CiAgICAtIFNjcmlwdHMgYW5kIGFkbWluaXN0cmF0aXZlIHRvb2xzIHVzZWQgaW4gdGhlIG1vbml0b3JlZCBlbnZpcm9ubWVudAogICAgLSBNb25pdG9yaW5nIGFjdGl2aXR5CmxldmVsOiBoaWdo&pipelineYml="
             }, {
                "children": [ {
                   "date_added": "13323563107295884",
@@ -521,7 +529,7 @@
                   "url": "https://car.mitre.org/"
                }, {
                   "date_added": "13384716247608307",
-                  "date_last_used": "13386022555756058",
+                  "date_last_used": "13389061197975393",
                   "guid": "6fd6c61f-bb54-4fdd-93b3-0b737bfd57d5",
                   "id": "67",
                   "name": "ATT&CK Nav: CAR",
@@ -540,7 +548,7 @@
                   "url": "https://github.com/elastic/detection-rules"
                }, {
                   "date_added": "13384714529603538",
-                  "date_last_used": "13386022565996327",
+                  "date_last_used": "13389061215483290",
                   "guid": "f8ed3ca8-7750-4aac-84a8-0a4cc807fb53",
                   "id": "62",
                   "name": "ATT&CK Nav: Elastic Search",
@@ -559,7 +567,7 @@
                   "url": "https://github.com/splunk/security_content"
                }, {
                   "date_added": "13384714729612578",
-                  "date_last_used": "13386022577568750",
+                  "date_last_used": "13389061395788146",
                   "guid": "92570e55-fd65-4506-8d01-ffa931627390",
                   "id": "63",
                   "name": "ATT&CK Nav: Splunk",
@@ -568,15 +576,26 @@
                } ],
                "date_added": "13386022315363881",
                "date_last_used": "0",
-               "date_modified": "13386022376632926",
+               "date_modified": "13389060036214148",
                "guid": "e5c1aaaf-ff6a-4b48-9b88-b7981649400b",
                "id": "107",
                "name": "Other",
                "type": "folder"
+            }, {
+               "date_added": "13389060524721604",
+               "date_last_used": "0",
+               "guid": "ef806e17-04ad-4e10-ab0e-fd6dfb7f6b4c",
+               "id": "114",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Sigma Latest Rule Packages",
+               "type": "url",
+               "url": "https://github.com/SigmaHQ/sigma/releases/latest"
             } ],
             "date_added": "13323563082673091",
             "date_last_used": "0",
-            "date_modified": "13386022315363971",
+            "date_modified": "13389060524721604",
             "guid": "17faa058-a5f1-4812-98dc-fcf3a1b6a5c6",
             "id": "52",
             "name": "Sigma",
@@ -584,7 +603,7 @@
          }, {
             "children": [ {
                "date_added": "13384714841339445",
-               "date_last_used": "13384813710147410",
+               "date_last_used": "13389153678434172",
                "guid": "bf209c3f-0103-4197-8ffc-28d39df04eff",
                "id": "65",
                "name": "SnapAttack | About",
@@ -592,7 +611,7 @@
                "url": "https://www.snapattack.com/"
             }, {
                "date_added": "13384803264236087",
-               "date_last_used": "13384803408841230",
+               "date_last_used": "13389153830803006",
                "guid": "1694f25b-88aa-4d37-8099-73ed931d7a2a",
                "id": "78",
                "name": "SnapAttack | Login",
@@ -600,7 +619,7 @@
                "url": "https://app.snapattack.com/login"
             }, {
                "date_added": "13384814268016647",
-               "date_last_used": "0",
+               "date_last_used": "13389153856537875",
                "guid": "71bcc83f-dc1c-45fd-9b20-c6d9504ab624",
                "id": "80",
                "meta_info": {
