@@ -1,5 +1,5 @@
 {
-   "checksum": "d4e0e55ad29b40478e7bac080cd1ab82",
+   "checksum": "0d66332621a89c1f43cac00440833908",
    "roots": {
       "bookmark_bar": {
          "children": [ {
@@ -82,17 +82,6 @@
                "type": "url",
                "url": "https://d3fend.mitre.org/"
             }, {
-               "date_added": "13323562555632296",
-               "date_last_used": "13384720289004291",
-               "guid": "2b207b99-c930-4ccb-ad4c-93ffef7a157d",
-               "id": "20",
-               "meta_info": {
-                  "power_bookmark_meta": ""
-               },
-               "name": "Slack Invite",
-               "type": "url",
-               "url": "https://join.slack.com/t/mitreattack/shared_invite/zt-ny1a3yon-XkT_OS1IF~ZYrESq8Xtqjg"
-            }, {
                "date_added": "13384720325362830",
                "date_last_used": "0",
                "guid": "a33535d1-b2e2-4872-9deb-ce6686366eb0",
@@ -108,10 +97,21 @@
                "name": "GitHub - mitre-attack/attack-stix-data: STIX data representing MITRE ATT&CK",
                "type": "url",
                "url": "https://github.com/mitre-attack/attack-stix-data"
+            }, {
+               "date_added": "13323562555632296",
+               "date_last_used": "13384720289004291",
+               "guid": "2b207b99-c930-4ccb-ad4c-93ffef7a157d",
+               "id": "20",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Slack Invite",
+               "type": "url",
+               "url": "https://join.slack.com/t/mitreattack/shared_invite/zt-ny1a3yon-XkT_OS1IF~ZYrESq8Xtqjg"
             } ],
             "date_added": "13242893495312211",
             "date_last_used": "0",
-            "date_modified": "13385259713247396",
+            "date_modified": "13389323006250411",
             "guid": "a7728c8b-30b4-4a7c-967a-0a18cf16de95",
             "id": "2",
             "name": "MITRE",
@@ -304,7 +304,7 @@
          }, {
             "children": [ {
                "date_added": "13243046588104900",
-               "date_last_used": "13389157004004341",
+               "date_last_used": "13389323240227321",
                "guid": "3f4c5238-96e6-42b4-8009-1c204fbc285b",
                "id": "41",
                "name": "CALDERA Server | Lab",
@@ -698,7 +698,7 @@
             "type": "folder"
          }, {
             "date_added": "13384738415569941",
-            "date_last_used": "13384738810382086",
+            "date_last_used": "13389323865569735",
             "guid": "993c3998-cebe-4a82-a8a9-e037d4430b1f",
             "id": "74",
             "meta_info": {
@@ -706,10 +706,10 @@
             },
             "name": "Class Slides",
             "type": "url",
-            "url": "https://1drv.ms/p/s!AvDXyd4cgfxegaFFHULobKa0zIvTBg?e=zsi1RS"
+            "url": "https://1drv.ms/p/c/68357bb78a803ac1/EdYMmtC-xexMjoL4DPArT2UBLy46tRcukPDQfmSojjwnmA?e=NwNxAT"
          }, {
             "date_added": "13384738797700460",
-            "date_last_used": "13384803154842151",
+            "date_last_used": "13389323888434277",
             "guid": "a0ce102a-9cdd-4726-829e-b08fb0c4a0ac",
             "id": "75",
             "meta_info": {
@@ -717,7 +717,7 @@
             },
             "name": "Class Labs",
             "type": "url",
-            "url": "https://1drv.ms/w/s!AvDXyd4cgfxegaI376HTIo8rWGhxKw?e=Ub1kC3"
+            "url": "https://1drv.ms/w/c/68357bb78a803ac1/EQ44sHsfxzJFh8MKylpWktkBgP_s_cNA95pK-ZXjfipVrA?e=lh8ldv"
          } ],
          "date_added": "13242893379423635",
          "date_last_used": "0",
