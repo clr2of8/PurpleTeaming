@@ -1,11 +1,11 @@
 {
-   "checksum": "0d66332621a89c1f43cac00440833908",
+   "checksum": "30d8257e49044c1fbbce0d29cc9010d1",
    "roots": {
       "bookmark_bar": {
          "children": [ {
             "children": [ {
                "date_added": "0",
-               "date_last_used": "13384719814237435",
+               "date_last_used": "13389368685410554",
                "guid": "dc33107b-5238-41b5-b638-a87ce4fd66e8",
                "id": "3",
                "name": "MITRE ATT&CK™",
@@ -13,7 +13,7 @@
                "url": "https://attack.mitre.org/"
             }, {
                "date_added": "13248221721023364",
-               "date_last_used": "13384883794656311",
+               "date_last_used": "13389326951459925",
                "guid": "cd0a222d-ebe0-47d0-9acd-db7e55ec73a4",
                "id": "4",
                "name": "ATT&CK® Navigator",
@@ -21,7 +21,7 @@
                "url": "https://mitre-attack.github.io/attack-navigator/"
             }, {
                "date_added": "0",
-               "date_last_used": "13311107045625594",
+               "date_last_used": "13389370551097441",
                "guid": "9a6bed3e-1020-4de4-ba53-2c3795d1ee38",
                "id": "5",
                "name": "ATT&CK® Navigator ART Coverage",
@@ -29,7 +29,7 @@
                "url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/Indexes/Attack-Navigator-Layers/art-navigator-layer.json"
             }, {
                "date_added": "0",
-               "date_last_used": "13311107040718775",
+               "date_last_used": "13389369910118035",
                "guid": "670f9486-40fb-4e12-b9ec-79832c748d02",
                "id": "6",
                "name": "ATT&CK® Navigator GitHub",
@@ -91,7 +91,7 @@
                "url": "https://engage.mitre.org/"
             }, {
                "date_added": "13385259713247017",
-               "date_last_used": "0",
+               "date_last_used": "13389409611694496",
                "guid": "3276203c-d9df-4768-9a55-2e43d69e35f3",
                "id": "102",
                "name": "GitHub - mitre-attack/attack-stix-data: STIX data representing MITRE ATT&CK",
@@ -119,7 +119,7 @@
          }, {
             "children": [ {
                "date_added": "13323630419729742",
-               "date_last_used": "13389072715441065",
+               "date_last_used": "13389384470275896",
                "guid": "6d40c8c9-ffd2-4caa-baf6-fcf86a52b112",
                "id": "29",
                "name": "Explore Atomic Red Team",
@@ -127,7 +127,7 @@
                "url": "https://atomicredteam.io/"
             }, {
                "date_added": "0",
-               "date_last_used": "13389040547818372",
+               "date_last_used": "13389384014702299",
                "guid": "43c024fc-bf2f-453e-b0dd-dddeeb2b14e8",
                "id": "22",
                "name": "Atomic Red Team GitHub",
@@ -151,7 +151,7 @@
                "url": "https://www.atomicredteam.io/invoke-atomicredteam/docs"
             }, {
                "date_added": "0",
-               "date_last_used": "13384717277225147",
+               "date_last_used": "13389328314013862",
                "guid": "6c47529e-ba0b-4e3d-b959-0d8d29d102b6",
                "id": "24",
                "name": "Invoke-AtomicRedTeam",
@@ -175,7 +175,7 @@
                "url": "https://github.com/redcanaryco/atomic-red-team/tree/master/atomics/Indexes/Attack-Navigator-Layers"
             }, {
                "date_added": "13384924809491790",
-               "date_last_used": "13385342159225861",
+               "date_last_used": "13389383787924358",
                "guid": "312127ec-6cad-43f7-abe3-ffd27fde3774",
                "id": "90",
                "name": "Atomic Test Generator | atomicgen.io",
@@ -235,7 +235,7 @@
                "url": "https://linux.cloudlab.lan:8081/"
             }, {
                "date_added": "13253332372935674",
-               "date_last_used": "13384747491395694",
+               "date_last_used": "13389377410918991",
                "guid": "9cc76534-0742-4a76-9c69-febfeb3ebffe",
                "id": "36",
                "name": "VECTR | Overview",
@@ -279,7 +279,7 @@
          }, {
             "children": [ {
                "date_added": "13389033534079606",
-               "date_last_used": "13389084948707497",
+               "date_last_used": "13389409450268166",
                "guid": "1478cab2-2a19-4a02-9d15-ccacd084a35c",
                "id": "109",
                "name": "MACAT - Adversary Simulation",
@@ -293,10 +293,21 @@
                "name": "MACAT Releases",
                "type": "url",
                "url": "https://github.com/thebleucheese/macat-ext/releases"
+            }, {
+               "date_added": "13389409515266721",
+               "date_last_used": "0",
+               "guid": "36f8ab82-9d58-4782-bcb8-086d66fe0e26",
+               "id": "118",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Discord Invite",
+               "type": "url",
+               "url": "https://discord.gg/MUB7fdRK46"
             } ],
             "date_added": "13384738322625829",
             "date_last_used": "0",
-            "date_modified": "13389033537317414",
+            "date_modified": "13389409515266721",
             "guid": "2a5ccfca-4c52-4c8e-99e0-7fb7f5f4cbe2",
             "id": "73",
             "name": "MACAT",
@@ -304,7 +315,7 @@
          }, {
             "children": [ {
                "date_added": "13243046588104900",
-               "date_last_used": "13389323240227321",
+               "date_last_used": "13389391315217962",
                "guid": "3f4c5238-96e6-42b4-8009-1c204fbc285b",
                "id": "41",
                "name": "CALDERA Server | Lab",
@@ -348,7 +359,7 @@
          }, {
             "children": [ {
                "date_added": "13385102448033943",
-               "date_last_used": "13389046799692276",
+               "date_last_used": "13389328982907796",
                "guid": "aab5788d-bc4e-4cdb-a9a3-bcde13090689",
                "id": "93",
                "meta_info": {
@@ -466,7 +477,7 @@
          }, {
             "children": [ {
                "date_added": "13384921163829066",
-               "date_last_used": "13389059625350107",
+               "date_last_used": "13389327186915733",
                "guid": "be1dde32-cda8-40cb-b66a-bd1a4a5096df",
                "id": "87",
                "name": "Sigma - SIEM Detection Format | The shareable detection format for security professionals.",
@@ -485,7 +496,7 @@
                "url": "https://github.com/SigmaHQ/sigma"
             }, {
                "date_added": "13384715906532256",
-               "date_last_used": "13389061173672222",
+               "date_last_used": "13389327190187466",
                "guid": "4b1878ca-3756-478b-b91c-5fc40912fc7c",
                "id": "66",
                "name": "ATT&CK Nav: Sigma",
@@ -603,7 +614,7 @@
          }, {
             "children": [ {
                "date_added": "13384714841339445",
-               "date_last_used": "13389153678434172",
+               "date_last_used": "13389409686815824",
                "guid": "bf209c3f-0103-4197-8ffc-28d39df04eff",
                "id": "65",
                "name": "SnapAttack | About",
@@ -634,7 +645,7 @@
             "date_modified": "13384814268016647",
             "guid": "d7fe209c-b5a7-4c05-8084-a2b7e19f7f87",
             "id": "79",
-            "name": "Snap Attack",
+            "name": "SnapAttack",
             "type": "folder"
          }, {
             "children": [ {
@@ -688,17 +699,25 @@
                "name": "Decider Tool by CISA",
                "type": "url",
                "url": "https://github.com/cisagov/decider"
+            }, {
+               "date_added": "13389324524885772",
+               "date_last_used": "13389371217317832",
+               "guid": "40ae2fd8-f1d1-476d-8212-45927708dbef",
+               "id": "116",
+               "name": "Cloud Labs | MetaCTF",
+               "type": "url",
+               "url": "https://app.metactf.com/cloud"
             } ],
             "date_added": "13323562824562407",
             "date_last_used": "0",
-            "date_modified": "13384720377382976",
+            "date_modified": "13389324524885776",
             "guid": "d0988577-ee13-40a5-bb37-b7becc2151af",
             "id": "45",
             "name": "Misc",
             "type": "folder"
          }, {
             "date_added": "13384738415569941",
-            "date_last_used": "13389323865569735",
+            "date_last_used": "13389325286576379",
             "guid": "993c3998-cebe-4a82-a8a9-e037d4430b1f",
             "id": "74",
             "meta_info": {
@@ -709,7 +728,7 @@
             "url": "https://1drv.ms/p/c/68357bb78a803ac1/EdYMmtC-xexMjoL4DPArT2UBLy46tRcukPDQfmSojjwnmA?e=NwNxAT"
          }, {
             "date_added": "13384738797700460",
-            "date_last_used": "13389323888434277",
+            "date_last_used": "13389388328049652",
             "guid": "a0ce102a-9cdd-4726-829e-b08fb0c4a0ac",
             "id": "75",
             "meta_info": {
