@@ -77,5 +77,3 @@ PowerShell Set-MpPreference -SubmitSamplesConsent 2
 # Turn off screensaver and screen lock features for convenience
 Powercfg /Change -monitor-timeout-ac 0
 Powercfg /Change -standby-timeout-ac 0
-
-# ToDo: add timer powershell module
