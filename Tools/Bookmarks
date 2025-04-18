@@ -1,11 +1,11 @@
 {
-   "checksum": "30d8257e49044c1fbbce0d29cc9010d1",
+   "checksum": "684c1dab09abe881c4e9f66dfaa13168",
    "roots": {
       "bookmark_bar": {
          "children": [ {
             "children": [ {
                "date_added": "0",
-               "date_last_used": "13389368685410554",
+               "date_last_used": "13389411159006209",
                "guid": "dc33107b-5238-41b5-b638-a87ce4fd66e8",
                "id": "3",
                "name": "MITRE ATT&CK™",
@@ -13,7 +13,7 @@
                "url": "https://attack.mitre.org/"
             }, {
                "date_added": "13248221721023364",
-               "date_last_used": "13389326951459925",
+               "date_last_used": "13389415761167441",
                "guid": "cd0a222d-ebe0-47d0-9acd-db7e55ec73a4",
                "id": "4",
                "name": "ATT&CK® Navigator",
@@ -119,7 +119,7 @@
          }, {
             "children": [ {
                "date_added": "13323630419729742",
-               "date_last_used": "13389384470275896",
+               "date_last_used": "13389410166803738",
                "guid": "6d40c8c9-ffd2-4caa-baf6-fcf86a52b112",
                "id": "29",
                "name": "Explore Atomic Red Team",
@@ -227,7 +227,7 @@
          }, {
             "children": [ {
                "date_added": "13253332350982437",
-               "date_last_used": "13389084199972241",
+               "date_last_used": "13389412913899968",
                "guid": "0d112d57-0c96-445b-a439-0add40d1dc5d",
                "id": "35",
                "name": "VECTR Server | Lab",
@@ -477,7 +477,7 @@
          }, {
             "children": [ {
                "date_added": "13384921163829066",
-               "date_last_used": "13389327186915733",
+               "date_last_used": "13389414358735838",
                "guid": "be1dde32-cda8-40cb-b66a-bd1a4a5096df",
                "id": "87",
                "name": "Sigma - SIEM Detection Format | The shareable detection format for security professionals.",
@@ -485,7 +485,7 @@
                "url": "https://sigmahq.io/"
             }, {
                "date_added": "13323563124949095",
-               "date_last_used": "13389060459328455",
+               "date_last_used": "13389414367071874",
                "guid": "143d1754-d053-4c10-9025-6ae40af3f1cd",
                "id": "54",
                "meta_info": {
@@ -496,15 +496,23 @@
                "url": "https://github.com/SigmaHQ/sigma"
             }, {
                "date_added": "13384715906532256",
-               "date_last_used": "13389327190187466",
+               "date_last_used": "13389415361589560",
                "guid": "4b1878ca-3756-478b-b91c-5fc40912fc7c",
                "id": "66",
                "name": "ATT&CK Nav: Sigma",
                "type": "url",
                "url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/SigmaHQ/sigma/refs/heads/master/other/sigma_attack_nav_coverage.json"
             }, {
+               "date_added": "13389416383091953",
+               "date_last_used": "13389416447678170",
+               "guid": "671cf68f-32ff-4311-9155-ca3ab69bbbb8",
+               "id": "120",
+               "name": "ATT&CK® Nav: Compare All",
+               "type": "url",
+               "url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/clr2of8/PurpleTeaming/refs/heads/main/Samples/AttackNavigator/sigma_comparisons_2025_02.json"
+            }, {
                "date_added": "13384799246148401",
-               "date_last_used": "13389059977002626",
+               "date_last_used": "13389414411428104",
                "guid": "88935155-0d58-4100-9ddd-5bc7fc9fbefc",
                "id": "77",
                "name": "Sigma CLI GitHub",
@@ -512,7 +520,7 @@
                "url": "https://github.com/SigmaHQ/sigma-cli"
             }, {
                "date_added": "13384923109851689",
-               "date_last_used": "13389060146974719",
+               "date_last_used": "13389414420419051",
                "guid": "90770318-1321-467c-9c6f-9f79db71dc4f",
                "id": "89",
                "name": "sigconverter.io - sigma rule converter",
@@ -520,12 +528,23 @@
                "url": "https://sigconverter.io/"
             }, {
                "date_added": "13384921596190613",
-               "date_last_used": "13389060367632730",
+               "date_last_used": "13389414635183340",
                "guid": "5feb896f-b0c0-4765-a006-00a515a8fa1c",
                "id": "88",
                "name": "SigmaHQ Rule Creation · Streamlit",
                "type": "url",
                "url": "https://sigmahq.streamlit.app/"
+            }, {
+               "date_added": "13389060524721604",
+               "date_last_used": "13389414555273375",
+               "guid": "ef806e17-04ad-4e10-ab0e-fd6dfb7f6b4c",
+               "id": "114",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Sigma Latest Rule Packages",
+               "type": "url",
+               "url": "https://github.com/SigmaHQ/sigma/releases/latest"
             }, {
                "children": [ {
                   "date_added": "13323563107295884",
@@ -540,7 +559,7 @@
                   "url": "https://car.mitre.org/"
                }, {
                   "date_added": "13384716247608307",
-                  "date_last_used": "13389061197975393",
+                  "date_last_used": "13389415445143021",
                   "guid": "6fd6c61f-bb54-4fdd-93b3-0b737bfd57d5",
                   "id": "67",
                   "name": "ATT&CK Nav: CAR",
@@ -559,7 +578,7 @@
                   "url": "https://github.com/elastic/detection-rules"
                }, {
                   "date_added": "13384714529603538",
-                  "date_last_used": "13389061215483290",
+                  "date_last_used": "13389415604009391",
                   "guid": "f8ed3ca8-7750-4aac-84a8-0a4cc807fb53",
                   "id": "62",
                   "name": "ATT&CK Nav: Elastic Search",
@@ -578,7 +597,7 @@
                   "url": "https://github.com/splunk/security_content"
                }, {
                   "date_added": "13384714729612578",
-                  "date_last_used": "13389061395788146",
+                  "date_last_used": "13389414721989683",
                   "guid": "92570e55-fd65-4506-8d01-ffa931627390",
                   "id": "63",
                   "name": "ATT&CK Nav: Splunk",
@@ -592,21 +611,10 @@
                "id": "107",
                "name": "Other",
                "type": "folder"
-            }, {
-               "date_added": "13389060524721604",
-               "date_last_used": "0",
-               "guid": "ef806e17-04ad-4e10-ab0e-fd6dfb7f6b4c",
-               "id": "114",
-               "meta_info": {
-                  "power_bookmark_meta": ""
-               },
-               "name": "Sigma Latest Rule Packages",
-               "type": "url",
-               "url": "https://github.com/SigmaHQ/sigma/releases/latest"
             } ],
             "date_added": "13323563082673091",
             "date_last_used": "0",
-            "date_modified": "13389060524721604",
+            "date_modified": "13389416388888326",
             "guid": "17faa058-a5f1-4812-98dc-fcf3a1b6a5c6",
             "id": "52",
             "name": "Sigma",
@@ -622,7 +630,7 @@
                "url": "https://www.snapattack.com/"
             }, {
                "date_added": "13384803264236087",
-               "date_last_used": "13389153830803006",
+               "date_last_used": "13389411015627720",
                "guid": "1694f25b-88aa-4d37-8099-73ed931d7a2a",
                "id": "78",
                "name": "SnapAttack | Login",
@@ -658,7 +666,7 @@
                "url": "https://www.antisyphontraining.com/course-catalog/"
             }, {
                "date_added": "13323827002641437",
-               "date_last_used": "13384712044929469",
+               "date_last_used": "13389416304544612",
                "guid": "3282b98a-490f-4ac3-b469-68177522da1e",
                "id": "47",
                "name": "Class Files",
@@ -728,7 +736,7 @@
             "url": "https://1drv.ms/p/c/68357bb78a803ac1/EdYMmtC-xexMjoL4DPArT2UBLy46tRcukPDQfmSojjwnmA?e=NwNxAT"
          }, {
             "date_added": "13384738797700460",
-            "date_last_used": "13389388328049652",
+            "date_last_used": "13389412522002700",
             "guid": "a0ce102a-9cdd-4726-829e-b08fb0c4a0ac",
             "id": "75",
             "meta_info": {
