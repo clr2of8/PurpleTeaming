@@ -184,4 +184,59 @@ function Purple-AddLinuxVMHostsEntry {
     }
 }
 
+function Purple-ClearPowerShellHistory {
+    Write-Host "Clearing PowerShell history..." -ForegroundColor Cyan
+    
+    try {
+        # Get the PowerShell history file path
+        $historyPath = (Get-PSReadlineOption).HistorySavePath
+        
+        if (-not $historyPath) {
+            # Fallback to default location if PSReadlineOption doesn't work
+            $historyPath = "$env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt"
+        }
+        
+        Write-Host "History file location: $historyPath" -ForegroundColor Yellow
+        
+        if (Test-Path $historyPath) {
+            # Get file size before deletion for reporting
+            $fileSize = (Get-Item $historyPath).Length
+            $fileSizeKB = [math]::Round($fileSize / 1KB, 2)
+            
+            # Delete the history file
+            Remove-Item $historyPath -Force
+            
+            Write-Host "Successfully deleted PowerShell history file" -ForegroundColor Green
+            Write-Host "Deleted file size: $fileSizeKB KB" -ForegroundColor Yellow
+            
+            # Also clear the current session history
+            Clear-History -ErrorAction SilentlyContinue
+            Write-Host "Cleared current session history" -ForegroundColor Green
+            
+        } else {
+            Write-Host "PowerShell history file not found at: $historyPath" -ForegroundColor Yellow
+            Write-Host "History may not exist or be stored in a different location" -ForegroundColor Gray
+        }
+        
+        # Additional cleanup - clear other potential history locations
+        $additionalPaths = @(
+            "$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt",
+            "$env:LOCALAPPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt"
+        )
+        
+        foreach ($path in $additionalPaths) {
+            if (Test-Path $path) {
+                Remove-Item $path -Force -ErrorAction SilentlyContinue
+                Write-Host "Cleared additional history file: $path" -ForegroundColor Green
+            }
+        }
+        
+        Write-Host "PowerShell history cleanup completed!" -ForegroundColor Green
+        
+    }
+    catch {
+        Write-Error "Failed to clear PowerShell history: $($_.Exception.Message)"
+    }
+}
+
 
