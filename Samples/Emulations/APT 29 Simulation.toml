@@ -229,3 +229,32 @@ command = """
 Get-Process
 """
 privilege = false
+
+[[procedures]]
+id = "9059e8de-3d7d-4954-a322-46161880b9cf"
+name = "Enable Windows Remote Management"
+description = """
+Powershell Enable WinRM
+
+Upon successful execution, powershell will "Enable-PSRemoting" allowing for remote PS access.
+"""
+primary_technique = "T1021.006"
+primary_tactic = "lateral-movement"
+mitre_tactics_ref = ["lateral-movement"]
+supported_platforms = ["windows"]
+dependency_checks = []
+cleanup_steps = []
+src_type = "art"
+tags = []
+threat_profile_ids = []
+variables = []
+
+[[procedures.procedure_steps]]
+instance_id = 3386
+fe_id = "69267b1e-8d77-4d9c-b52a-99af568fbe06"
+order = 0
+executor = "powershell"
+command = """
+Enable-PSRemoting -Force
+"""
+privilege = true
