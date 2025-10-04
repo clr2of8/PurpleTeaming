@@ -27,6 +27,14 @@ function Get-ClassFiles {
     Get-ChildItem -Path $mainFolderUnzipped -Recurse | Move-Item -Destination $PurpleTeamPath
     Remove-Item $mainFolderUnzipped -Recurse -Force
     Remove-Item $path -Recurse
+    
+    # Create desktop shortcut to PurpleTeaming folder
+    $WshShell = New-Object -comObject WScript.Shell
+    $Shortcut = $WshShell.CreateShortcut("$env:USERPROFILE\Desktop\PurpleTeaming.lnk")
+    $Shortcut.TargetPath = $PurpleTeamPath
+    $Shortcut.Description = "PurpleTeaming Class Files"
+    $Shortcut.Save()
+    Write-Host "Created desktop shortcut to PurpleTeaming folder" -ForegroundColor Green
 }
     
 # install Chrome (must be admin)
