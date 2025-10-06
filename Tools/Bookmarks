@@ -1,11 +1,11 @@
 {
-   "checksum": "684c1dab09abe881c4e9f66dfaa13168",
+   "checksum": "5fa7ea32cb26c86a70cf6554d9aa845a",
    "roots": {
       "bookmark_bar": {
          "children": [ {
             "children": [ {
                "date_added": "0",
-               "date_last_used": "13389411159006209",
+               "date_last_used": "13404252392021463",
                "guid": "dc33107b-5238-41b5-b638-a87ce4fd66e8",
                "id": "3",
                "name": "MITRE ATT&CK™",
@@ -13,7 +13,7 @@
                "url": "https://attack.mitre.org/"
             }, {
                "date_added": "13248221721023364",
-               "date_last_used": "13389415761167441",
+               "date_last_used": "13404252395912868",
                "guid": "cd0a222d-ebe0-47d0-9acd-db7e55ec73a4",
                "id": "4",
                "name": "ATT&CK® Navigator",
@@ -21,7 +21,7 @@
                "url": "https://mitre-attack.github.io/attack-navigator/"
             }, {
                "date_added": "0",
-               "date_last_used": "13389370551097441",
+               "date_last_used": "13404252400339080",
                "guid": "9a6bed3e-1020-4de4-ba53-2c3795d1ee38",
                "id": "5",
                "name": "ATT&CK® Navigator ART Coverage",
@@ -29,7 +29,7 @@
                "url": "https://mitre-attack.github.io/attack-navigator/#layerURL=https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/Indexes/Attack-Navigator-Layers/art-navigator-layer.json"
             }, {
                "date_added": "0",
-               "date_last_used": "13389369910118035",
+               "date_last_used": "13404252554714378",
                "guid": "670f9486-40fb-4e12-b9ec-79832c748d02",
                "id": "6",
                "name": "ATT&CK® Navigator GitHub",
@@ -37,7 +37,7 @@
                "url": "https://github.com/mitre-attack/attack-navigator"
             }, {
                "date_added": "13322455872856257",
-               "date_last_used": "13384719833195521",
+               "date_last_used": "13404252562292343",
                "guid": "534d8661-a91c-4adb-90f6-10e8063edce1",
                "id": "8",
                "meta_info": {
@@ -48,7 +48,7 @@
                "url": "https://chrome.google.com/webstore/detail/attck-powered-suit/gfhomppaadldngjnmbefmmiokgefjddd"
             }, {
                "date_added": "13384719898382867",
-               "date_last_used": "13384720216590921",
+               "date_last_used": "13404252588105696",
                "guid": "5e47fc9a-313d-456d-8487-fd83d00baa67",
                "id": "68",
                "name": "MITRE ATT&CK Defender (MAD)",
@@ -56,7 +56,7 @@
                "url": "https://mad20.io/"
             }, {
                "date_added": "13323562995237896",
-               "date_last_used": "13384720263801097",
+               "date_last_used": "13404252592317108",
                "guid": "37cdce57-8f8f-4535-8c46-ac99d382070d",
                "id": "17",
                "name": "ATT&CK® Evaluations",
@@ -64,7 +64,7 @@
                "url": "https://attackevals.mitre-engenuity.org/"
             }, {
                "date_added": "13323560089836954",
-               "date_last_used": "0",
+               "date_last_used": "13404252599031880",
                "guid": "785ff8e4-37f7-469a-b415-dce2a719c33a",
                "id": "18",
                "name": "Adversary Emulation Library",
@@ -72,7 +72,7 @@
                "url": "https://github.com/center-for-threat-informed-defense/adversary_emulation_library"
             }, {
                "date_added": "13323563270715900",
-               "date_last_used": "13384720278040849",
+               "date_last_used": "13404252603377473",
                "guid": "74e6e80c-3121-4cef-9026-52055645699c",
                "id": "19",
                "meta_info": {
@@ -83,7 +83,7 @@
                "url": "https://d3fend.mitre.org/"
             }, {
                "date_added": "13384720325362830",
-               "date_last_used": "0",
+               "date_last_used": "13404252607777423",
                "guid": "a33535d1-b2e2-4872-9deb-ce6686366eb0",
                "id": "69",
                "name": "MITRE Engage™ | An Adversary Engagement Framework from MITRE",
@@ -91,23 +91,12 @@
                "url": "https://engage.mitre.org/"
             }, {
                "date_added": "13385259713247017",
-               "date_last_used": "13389409611694496",
+               "date_last_used": "13404252624996670",
                "guid": "3276203c-d9df-4768-9a55-2e43d69e35f3",
                "id": "102",
                "name": "GitHub - mitre-attack/attack-stix-data: STIX data representing MITRE ATT&CK",
                "type": "url",
                "url": "https://github.com/mitre-attack/attack-stix-data"
-            }, {
-               "date_added": "13323562555632296",
-               "date_last_used": "13384720289004291",
-               "guid": "2b207b99-c930-4ccb-ad4c-93ffef7a157d",
-               "id": "20",
-               "meta_info": {
-                  "power_bookmark_meta": ""
-               },
-               "name": "Slack Invite",
-               "type": "url",
-               "url": "https://join.slack.com/t/mitreattack/shared_invite/zt-ny1a3yon-XkT_OS1IF~ZYrESq8Xtqjg"
             } ],
             "date_added": "13242893495312211",
             "date_last_used": "0",
@@ -159,7 +148,7 @@
                "url": "https://github.com/redcanaryco/invoke-atomicredteam"
             }, {
                "date_added": "0",
-               "date_last_used": "13384717313260860",
+               "date_last_used": "13404252728691511",
                "guid": "fd87779b-f958-430a-9f8c-f1bcb9339ec3",
                "id": "26",
                "name": "Windows Atomics Index",
@@ -182,8 +171,16 @@
                "type": "url",
                "url": "https://atomicgen.io/"
             }, {
+               "date_added": "13404252170941398",
+               "date_last_used": "13404252735891293",
+               "guid": "7635243f-d54c-4a01-8396-de5c34869ccc",
+               "id": "122",
+               "name": "MCP Server for Atomic Red Team",
+               "type": "url",
+               "url": "https://github.com/cyberbuff/atomic-red-team-mcp"
+            }, {
                "date_added": "13323630724841147",
-               "date_last_used": "13384719734440568",
+               "date_last_used": "13404252738972793",
                "guid": "2983a370-3168-48c6-86f1-d195de104e04",
                "id": "30",
                "name": "Atomic Spotlights with Carrie Roberts",
@@ -191,7 +188,7 @@
                "url": "https://www.youtube.com/playlist?list=PL-4fuTjKox5en_SOd0teFlsk9co4StXnW"
             }, {
                "date_added": "13323630576136282",
-               "date_last_used": "13384719757636723",
+               "date_last_used": "13404253155553361",
                "guid": "b024639b-523a-42aa-aab6-b94808d4c5db",
                "id": "31",
                "name": "Atomics on a Friday",
@@ -199,7 +196,7 @@
                "url": "https://www.youtube.com/@atomicsonafriday/videos"
             }, {
                "date_added": "13323630768754097",
-               "date_last_used": "13384719789185133",
+               "date_last_used": "13404252733182854",
                "guid": "95b2eb7d-44e0-45ab-b73d-4b63d8942de8",
                "id": "32",
                "name": "ATH Atomic Test Harnesses",
@@ -207,7 +204,7 @@
                "url": "https://github.com/redcanaryco/AtomicTestHarnesses"
             }, {
                "date_added": "13323562470262528",
-               "date_last_used": "13384717372653980",
+               "date_last_used": "13404252748576241",
                "guid": "a34090e2-2fd7-4dc0-b50e-2aa1931f066c",
                "id": "33",
                "meta_info": {
@@ -219,7 +216,7 @@
             } ],
             "date_added": "13242893495310769",
             "date_last_used": "0",
-            "date_modified": "13389035067875750",
+            "date_modified": "13404252214208651",
             "guid": "c4143e9a-b18b-4299-b178-88c142477992",
             "id": "21",
             "name": "ART",
@@ -235,7 +232,7 @@
                "url": "https://linux.cloudlab.lan:8081/"
             }, {
                "date_added": "13253332372935674",
-               "date_last_used": "13389377410918991",
+               "date_last_used": "13404253168457660",
                "guid": "9cc76534-0742-4a76-9c69-febfeb3ebffe",
                "id": "36",
                "name": "VECTR | Overview",
@@ -243,7 +240,7 @@
                "url": "https://vectr.io/"
             }, {
                "date_added": "13257706193220817",
-               "date_last_used": "13384717238108153",
+               "date_last_used": "13404253172340866",
                "guid": "d313edee-e5ae-44c3-aaf1-6a398f7ef0c7",
                "id": "37",
                "name": "How To Videos - VECTR Documentation",
@@ -251,7 +248,7 @@
                "url": "https://docs.vectr.io/How-To-Videos/"
             }, {
                "date_added": "13323923024955152",
-               "date_last_used": "13384717249186984",
+               "date_last_used": "13404253176488327",
                "guid": "f91aeb1e-8c57-46a5-a387-4ae8e097a3c5",
                "id": "38",
                "name": "Threat Simulation Indexes",
@@ -259,7 +256,7 @@
                "url": "https://github.com/SecurityRiskAdvisors/indexes"
             }, {
                "date_added": "13323562282451868",
-               "date_last_used": "13384717259008001",
+               "date_last_used": "13404253196282224",
                "guid": "86577cb4-f85c-4ed9-a1fc-573b9135032b",
                "id": "39",
                "meta_info": {
@@ -315,7 +312,7 @@
          }, {
             "children": [ {
                "date_added": "13243046588104900",
-               "date_last_used": "13389391315217962",
+               "date_last_used": "13404253088621738",
                "guid": "3f4c5238-96e6-42b4-8009-1c204fbc285b",
                "id": "41",
                "name": "CALDERA Server | Lab",
@@ -323,7 +320,7 @@
                "url": "http://linux.cloudlab.lan:8888/"
             }, {
                "date_added": "13246048193903489",
-               "date_last_used": "13384717205441411",
+               "date_last_used": "13404253211291391",
                "guid": "8956a597-2cea-4112-aca0-d43ff55f07fd",
                "id": "42",
                "name": "CALDERA Documentation",
@@ -331,7 +328,7 @@
                "url": "https://caldera.readthedocs.io/en/latest/"
             }, {
                "date_added": "13246084120371359",
-               "date_last_used": "13385146922243600",
+               "date_last_used": "13404253214162733",
                "guid": "82fff951-20a2-481b-b73d-690d5a6e9932",
                "id": "43",
                "name": "CALDERA GitHub",
@@ -339,7 +336,7 @@
                "url": "https://github.com/mitre/caldera"
             }, {
                "date_added": "13323562233147855",
-               "date_last_used": "13384717216531002",
+               "date_last_used": "13404253244422915",
                "guid": "73bf38ea-f6e9-41b0-8006-58511ecdf0ef",
                "id": "44",
                "meta_info": {
@@ -359,7 +356,7 @@
          }, {
             "children": [ {
                "date_added": "13385102448033943",
-               "date_last_used": "13389328982907796",
+               "date_last_used": "13404253110168394",
                "guid": "aab5788d-bc4e-4cdb-a9a3-bcde13090689",
                "id": "93",
                "meta_info": {
@@ -370,7 +367,7 @@
                "url": "http://linux.cloudlab.lan:8080/"
             }, {
                "date_added": "13384916972913191",
-               "date_last_used": "13386010600281590",
+               "date_last_used": "13404253250807943",
                "guid": "249498f7-aec5-46b7-90e9-675dcd4deace",
                "id": "82",
                "name": "OpenBAS by Filigran",
@@ -378,7 +375,7 @@
                "url": "https://filigran.io/solutions/open-bas/"
             }, {
                "date_added": "13385081210809453",
-               "date_last_used": "13386010607435170",
+               "date_last_used": "13404253253327540",
                "guid": "fb7e7fa3-2227-4a4c-a2c0-38a00e7a2edf",
                "id": "91",
                "name": "OpenBAS Documentation",
@@ -386,7 +383,7 @@
                "url": "https://docs.openbas.io/latest/"
             }, {
                "date_added": "13384916977734160",
-               "date_last_used": "13385522642553171",
+               "date_last_used": "13404253255817505",
                "guid": "5b655995-cc22-4adc-997a-c300a3c5b321",
                "id": "83",
                "name": "OpenBAS GitHub",
@@ -394,7 +391,7 @@
                "url": "https://github.com/OpenBAS-Platform/openbas"
             }, {
                "date_added": "13385524536134070",
-               "date_last_used": "13386022137677260",
+               "date_last_used": "13404253259299110",
                "guid": "634a8ed0-48d8-46c1-b648-e196de9bc04c",
                "id": "104",
                "meta_info": {
@@ -405,7 +402,7 @@
                "url": "https://demo.openbas.io/"
             }, {
                "date_added": "13389059515247480",
-               "date_last_used": "0",
+               "date_last_used": "13404253269501355",
                "guid": "28f56a0b-cec1-442e-8cce-4c714e4601c9",
                "id": "112",
                "name": "Filigran Academy",
@@ -413,7 +410,7 @@
                "url": "https://filigran.io/offerings/filigran-academy/"
             }, {
                "date_added": "13384917070224790",
-               "date_last_used": "0",
+               "date_last_used": "13404253284184952",
                "guid": "5657806b-04e7-4416-b659-5422f112e6bc",
                "id": "85",
                "meta_info": {
@@ -425,7 +422,7 @@
             }, {
                "children": [ {
                   "date_added": "13385166375757220",
-                  "date_last_used": "13385494266277783",
+                  "date_last_used": "13404253290947770",
                   "guid": "d483fca7-1aa7-49ee-9d38-4505872e8bcc",
                   "id": "97",
                   "name": "OpenCTI by Filigran",
@@ -449,7 +446,7 @@
                   "url": "https://github.com/OpenCTI-Platform/opencti"
                }, {
                   "date_added": "13386022192020412",
-                  "date_last_used": "13386022208077116",
+                  "date_last_used": "13404253295536206",
                   "guid": "82814b54-21a6-4b8e-803e-106059e3c2a2",
                   "id": "106",
                   "meta_info": {
@@ -477,7 +474,7 @@
          }, {
             "children": [ {
                "date_added": "13384921163829066",
-               "date_last_used": "13389414358735838",
+               "date_last_used": "13404253304446799",
                "guid": "be1dde32-cda8-40cb-b66a-bd1a4a5096df",
                "id": "87",
                "name": "Sigma - SIEM Detection Format | The shareable detection format for security professionals.",
@@ -485,7 +482,7 @@
                "url": "https://sigmahq.io/"
             }, {
                "date_added": "13323563124949095",
-               "date_last_used": "13389414367071874",
+               "date_last_used": "13404253307117937",
                "guid": "143d1754-d053-4c10-9025-6ae40af3f1cd",
                "id": "54",
                "meta_info": {
@@ -548,7 +545,7 @@
             }, {
                "children": [ {
                   "date_added": "13323563107295884",
-                  "date_last_used": "13386022331770944",
+                  "date_last_used": "13404253315208365",
                   "guid": "246cc2fd-e2b6-4049-85b2-aad646c9fc1d",
                   "id": "53",
                   "meta_info": {
@@ -621,16 +618,8 @@
             "type": "folder"
          }, {
             "children": [ {
-               "date_added": "13384714841339445",
-               "date_last_used": "13389409686815824",
-               "guid": "bf209c3f-0103-4197-8ffc-28d39df04eff",
-               "id": "65",
-               "name": "SnapAttack | About",
-               "type": "url",
-               "url": "https://www.snapattack.com/"
-            }, {
                "date_added": "13384803264236087",
-               "date_last_used": "13389411015627720",
+               "date_last_used": "13404253388927773",
                "guid": "1694f25b-88aa-4d37-8099-73ed931d7a2a",
                "id": "78",
                "name": "SnapAttack | Login",
@@ -638,7 +627,7 @@
                "url": "https://app.snapattack.com/login"
             }, {
                "date_added": "13384814268016647",
-               "date_last_used": "13389153856537875",
+               "date_last_used": "13404253397894043",
                "guid": "71bcc83f-dc1c-45fd-9b20-c6d9504ab624",
                "id": "80",
                "meta_info": {
@@ -657,8 +646,16 @@
             "type": "folder"
          }, {
             "children": [ {
+               "date_added": "13404252273691670",
+               "date_last_used": "0",
+               "guid": "4f81516b-833a-4bde-8e3b-0ce5e72ce896",
+               "id": "123",
+               "name": "APT29 Emulation Report by AttackIQ",
+               "type": "url",
+               "url": "https://www.attackiq.com/2023/05/04/emulating-nobelium-apt29/"
+            }, {
                "date_added": "13323563395246450",
-               "date_last_used": "13384712041402145",
+               "date_last_used": "13404252332955021",
                "guid": "d8c6133a-e28c-46b4-a951-e48cb09a250e",
                "id": "46",
                "name": "Antisyphon Training",
@@ -666,7 +663,7 @@
                "url": "https://www.antisyphontraining.com/course-catalog/"
             }, {
                "date_added": "13323827002641437",
-               "date_last_used": "13389416304544612",
+               "date_last_used": "13404252339894769",
                "guid": "3282b98a-490f-4ac3-b469-68177522da1e",
                "id": "47",
                "name": "Class Files",
@@ -674,7 +671,7 @@
                "url": "https://github.com/clr2of8/PurpleTeaming"
             }, {
                "date_added": "13323923077644331",
-               "date_last_used": "13384488126150609",
+               "date_last_used": "13404252343880311",
                "guid": "4d24669c-7994-4488-b49f-88d907f573e4",
                "id": "48",
                "name": "Stratus Red Team",
@@ -682,7 +679,7 @@
                "url": "https://stratus-red-team.cloud/"
             }, {
                "date_added": "13323562907679622",
-               "date_last_used": "13384717174037010",
+               "date_last_used": "13404252346283608",
                "guid": "89c754d7-90ef-4678-8d7e-0d2beddc5e79",
                "id": "50",
                "name": "Security Datasets",
@@ -690,7 +687,7 @@
                "url": "https://securitydatasets.com/introduction.html"
             }, {
                "date_added": "13323562944494654",
-               "date_last_used": "13384717181737437",
+               "date_last_used": "13404252349471165",
                "guid": "a893e922-f21f-4927-9fa7-e3597437240e",
                "id": "51",
                "name": "Splunk Attack Data",
@@ -698,7 +695,7 @@
                "url": "https://github.com/splunk/attack_data"
             }, {
                "date_added": "13323563315587200",
-               "date_last_used": "13384717187407780",
+               "date_last_used": "13404252353885757",
                "guid": "05243e57-460e-4bf0-904d-d38d0140b876",
                "id": "58",
                "meta_info": {
@@ -709,7 +706,7 @@
                "url": "https://github.com/cisagov/decider"
             }, {
                "date_added": "13389324524885772",
-               "date_last_used": "13389371217317832",
+               "date_last_used": "13404253409226234",
                "guid": "40ae2fd8-f1d1-476d-8212-45927708dbef",
                "id": "116",
                "name": "Cloud Labs | MetaCTF",
@@ -718,14 +715,14 @@
             } ],
             "date_added": "13323562824562407",
             "date_last_used": "0",
-            "date_modified": "13389324524885776",
+            "date_modified": "13404252281001836",
             "guid": "d0988577-ee13-40a5-bb37-b7becc2151af",
             "id": "45",
             "name": "Misc",
             "type": "folder"
          }, {
             "date_added": "13384738415569941",
-            "date_last_used": "13389325286576379",
+            "date_last_used": "13404253425459575",
             "guid": "993c3998-cebe-4a82-a8a9-e037d4430b1f",
             "id": "74",
             "meta_info": {
@@ -736,7 +733,7 @@
             "url": "https://1drv.ms/p/c/68357bb78a803ac1/EdYMmtC-xexMjoL4DPArT2UBLy46tRcukPDQfmSojjwnmA?e=NwNxAT"
          }, {
             "date_added": "13384738797700460",
-            "date_last_used": "13389412522002700",
+            "date_last_used": "13404253418915463",
             "guid": "a0ce102a-9cdd-4726-829e-b08fb0c4a0ac",
             "id": "75",
             "meta_info": {
